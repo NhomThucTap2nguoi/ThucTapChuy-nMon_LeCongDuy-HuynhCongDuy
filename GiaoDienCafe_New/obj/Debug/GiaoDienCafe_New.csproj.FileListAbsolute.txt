@@ -25,3 +25,17 @@ C:\Users\CONG DUY\Desktop\GiaoDienCafe_New\GiaoDienCafe_New\obj\Debug\GiaoDienCa
 C:\Users\CONG DUY\Desktop\GiaoDienCafe_New\GiaoDienCafe_New\bin\Debug\Guna.UI2.dll
 C:\Users\CONG DUY\Desktop\GiaoDienCafe_New\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.FormPaint.resources
 C:\Users\CONG DUY\Desktop\GiaoDienCafe_New\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.FormTaiKhoan.resources
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\bin\Debug\GiaoDienCafe_New.exe.config
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\bin\Debug\GiaoDienCafe_New.exe
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\bin\Debug\GiaoDienCafe_New.pdb
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.FormDangNhap.resources
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.FormGiaodien.resources
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.FormPaint.resources
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.FormTaiKhoan.resources
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.Properties.Resources.resources
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.csproj.CopyComplete
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.exe
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.pdb

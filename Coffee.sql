@@ -137,6 +137,16 @@ INSERT [dbo].[Food] ([id], [name], [idCategory], [price]) VALUES (5, N'Trà ô l
 INSERT [dbo].[Food] ([id], [name], [idCategory], [price]) VALUES (6, N'Trà đào', 3, 180000)
 INSERT [dbo].[Food] ([id], [name], [idCategory], [price]) VALUES (7, N'Bia Heniken', 4, 25000)
 INSERT [dbo].[Food] ([id], [name], [idCategory], [price]) VALUES (8, N'Nước khoáng', 4, 2000)
+INSERT [dbo].[Food] ([id], [name], [idCategory], [price]) VALUES (9, N'Trà Chanh', 3, 20000)
+INSERT [dbo].[Food] ([id], [name], [idCategory], [price]) VALUES (10, N'Cà Phê Tây Nguyên', 2, 30000)
+INSERT [dbo].[Food] ([id], [name], [idCategory], [price]) VALUES (11, N'Seven up', 1, 12000)
+INSERT [dbo].[Food] ([id], [name], [idCategory], [price]) VALUES (12, N'Sinh Tố Bơ', 4, 20000)
+
+
+
+
+
+
 
 SET IDENTITY_INSERT [dbo].[Food] OFF
 SET IDENTITY_INSERT [dbo].[FoodCategory] ON 
