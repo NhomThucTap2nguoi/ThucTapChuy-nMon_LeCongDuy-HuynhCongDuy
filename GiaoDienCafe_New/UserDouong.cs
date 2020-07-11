@@ -179,5 +179,13 @@ namespace GiaoDienCafe_New
         {
             
         }
+
+        private void btLammoi_Click(object sender, EventArgs e)
+        {
+            txbFoodID.Text = "";
+            txtbFoodName.Text = "";
+            cbCategory_food.Text = "";
+            nmFoodPrice.Text = "";
+        }
     }
 }

@@ -35,6 +35,7 @@
             this.idCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sss = new Guna.UI.WinForms.GunaPanel();
+            this.nmFoodPrice = new Guna.UI.WinForms.GunaNumeric();
             this.cbCategory_food = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.btSua = new Guna.UI2.WinForms.Guna2Button();
@@ -47,7 +48,7 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaButton22 = new Guna.UI.WinForms.GunaButton();
-            this.nmFoodPrice = new Guna.UI.WinForms.GunaNumeric();
+            this.btLammoi = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).BeginInit();
             this.sss.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +95,7 @@
             // sss
             // 
             this.sss.BackColor = System.Drawing.Color.OldLace;
+            this.sss.Controls.Add(this.btLammoi);
             this.sss.Controls.Add(this.nmFoodPrice);
             this.sss.Controls.Add(this.cbCategory_food);
             this.sss.Controls.Add(this.gunaButton3);
@@ -112,6 +114,25 @@
             this.sss.Name = "sss";
             this.sss.Size = new System.Drawing.Size(1264, 261);
             this.sss.TabIndex = 78;
+            // 
+            // nmFoodPrice
+            // 
+            this.nmFoodPrice.BackColor = System.Drawing.Color.Transparent;
+            this.nmFoodPrice.BaseColor = System.Drawing.Color.White;
+            this.nmFoodPrice.BorderColor = System.Drawing.Color.Silver;
+            this.nmFoodPrice.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.nmFoodPrice.ButtonForeColor = System.Drawing.Color.White;
+            this.nmFoodPrice.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.nmFoodPrice.ForeColor = System.Drawing.Color.Black;
+            this.nmFoodPrice.Location = new System.Drawing.Point(708, 149);
+            this.nmFoodPrice.Maximum = ((long)(99999999));
+            this.nmFoodPrice.Minimum = ((long)(0));
+            this.nmFoodPrice.Name = "nmFoodPrice";
+            this.nmFoodPrice.Size = new System.Drawing.Size(140, 30);
+            this.nmFoodPrice.TabIndex = 81;
+            this.nmFoodPrice.Text = "gunaNumeric1";
+            this.nmFoodPrice.Value = ((long)(1));
+            this.nmFoodPrice.ValueChanged += new System.EventHandler(this.nmFoodPrice_ValueChanged);
             // 
             // cbCategory_food
             // 
@@ -338,24 +359,22 @@
             this.gunaButton22.Text = "Thông Tin Hàng";
             this.gunaButton22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // nmFoodPrice
+            // btLammoi
             // 
-            this.nmFoodPrice.BackColor = System.Drawing.Color.Transparent;
-            this.nmFoodPrice.BaseColor = System.Drawing.Color.White;
-            this.nmFoodPrice.BorderColor = System.Drawing.Color.Silver;
-            this.nmFoodPrice.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.nmFoodPrice.ButtonForeColor = System.Drawing.Color.White;
-            this.nmFoodPrice.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.nmFoodPrice.ForeColor = System.Drawing.Color.Black;
-            this.nmFoodPrice.Location = new System.Drawing.Point(708, 149);
-            this.nmFoodPrice.Maximum = ((long)(99999999));
-            this.nmFoodPrice.Minimum = ((long)(0));
-            this.nmFoodPrice.Name = "nmFoodPrice";
-            this.nmFoodPrice.Size = new System.Drawing.Size(140, 30);
-            this.nmFoodPrice.TabIndex = 81;
-            this.nmFoodPrice.Text = "gunaNumeric1";
-            this.nmFoodPrice.Value = ((long)(1));
-            this.nmFoodPrice.ValueChanged += new System.EventHandler(this.nmFoodPrice_ValueChanged);
+            this.btLammoi.BorderRadius = 15;
+            this.btLammoi.CheckedState.Parent = this.btLammoi;
+            this.btLammoi.CustomImages.Parent = this.btLammoi;
+            this.btLammoi.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLammoi.ForeColor = System.Drawing.Color.Black;
+            this.btLammoi.HoverState.Parent = this.btLammoi;
+            this.btLammoi.Location = new System.Drawing.Point(1147, 149);
+            this.btLammoi.Margin = new System.Windows.Forms.Padding(2);
+            this.btLammoi.Name = "btLammoi";
+            this.btLammoi.ShadowDecoration.Parent = this.btLammoi;
+            this.btLammoi.Size = new System.Drawing.Size(90, 50);
+            this.btLammoi.TabIndex = 82;
+            this.btLammoi.Text = "Làm mới";
+            this.btLammoi.Click += new System.EventHandler(this.btLammoi_Click);
             // 
             // UserDouong
             // 
@@ -393,5 +412,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaButton gunaButton22;
         private Guna.UI.WinForms.GunaNumeric nmFoodPrice;
+        private Guna.UI2.WinForms.Guna2Button btLammoi;
     }
 }
