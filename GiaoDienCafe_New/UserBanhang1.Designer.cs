@@ -197,12 +197,12 @@
             this.nmDiscount.ForeColor = System.Drawing.Color.Black;
             this.nmDiscount.Location = new System.Drawing.Point(187, 40);
             this.nmDiscount.Maximum = ((long)(100));
-            this.nmDiscount.Minimum = ((long)(-100));
+            this.nmDiscount.Minimum = ((long)(0));
             this.nmDiscount.Name = "nmDiscount";
             this.nmDiscount.Size = new System.Drawing.Size(92, 30);
             this.nmDiscount.TabIndex = 2;
             this.nmDiscount.Text = "gunaNumeric1";
-            this.nmDiscount.Value = ((long)(1));
+            this.nmDiscount.Value = ((long)(0));
             // 
             // cbSwitchTable
             // 

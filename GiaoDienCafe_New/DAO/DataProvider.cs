@@ -12,7 +12,7 @@ namespace GiaoDienCafe_New.DAO
     {
         private static DataProvider instance;
 
-        string connectionSTR = "Data Source=DESKTOP-GISFHHL;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
+        string connectionSTR = "Data Source=DESKTOP-GISFHHL;Initial Catalog=coffee;Integrated Security=True";
         // Khởi tạo tính đóng gói : Ctrl + R + E
         public static DataProvider Instance
         {

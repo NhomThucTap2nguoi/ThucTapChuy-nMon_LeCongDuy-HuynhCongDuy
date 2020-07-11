@@ -16,6 +16,7 @@ namespace GiaoDienCafe_New
 
         public FormGiaodien()
         {
+
             InitializeComponent();
         }
 

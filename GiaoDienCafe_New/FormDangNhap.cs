@@ -54,11 +54,12 @@ namespace GiaoDienCafe_New
 
             if (Login(userName, passWord))
             {
-                Account accountLogin = AccountDAO.Instance.GetAccountByUserName(userName);
+                MessageBox.Show("Đăng nhập thành công", "Thông báo");
                 FormGiaodien f = new FormGiaodien();
                 this.Hide();
                 f.ShowDialog();
-                this.Show();
+
+               
             }
             else
             {
@@ -89,6 +90,11 @@ namespace GiaoDienCafe_New
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtbPassWord_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

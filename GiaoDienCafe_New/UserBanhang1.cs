@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using GiaoDienCafe_New.DTO;
 using GiaoDienCafe_New.DAO;
 using System.Globalization;
+using System.Threading;
 
 namespace GiaoDienCafe_New
 {
@@ -86,9 +87,9 @@ namespace GiaoDienCafe_New
                 totalPrice += item.TotalPrice;
                 lsvBill.Items.Add(lsvItem);
             }
-           
+            CultureInfo culture = new CultureInfo("vi-VN");
+            Thread.CurrentThread.CurrentCulture = culture;
             txbTotalPrice.Text = totalPrice.ToString("c");
-
         }
 
 

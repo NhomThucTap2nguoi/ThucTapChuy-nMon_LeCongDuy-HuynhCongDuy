@@ -49,18 +49,18 @@
             // 
             this.txtbPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbPassWord.Location = new System.Drawing.Point(151, 347);
-            this.txtbPassWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtbPassWord.Multiline = true;
+            this.txtbPassWord.Margin = new System.Windows.Forms.Padding(2);
             this.txtbPassWord.Name = "txtbPassWord";
-            this.txtbPassWord.Size = new System.Drawing.Size(166, 29);
+            this.txtbPassWord.Size = new System.Drawing.Size(166, 26);
             this.txtbPassWord.TabIndex = 17;
             this.txtbPassWord.UseSystemPasswordChar = true;
+            this.txtbPassWord.TextChanged += new System.EventHandler(this.txtbPassWord_TextChanged);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(94, 271);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(52, 51);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -71,7 +71,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(94, 327);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(52, 54);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -82,7 +82,7 @@
             // 
             this.txtbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbUserName.Location = new System.Drawing.Point(151, 291);
-            this.txtbUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txtbUserName.Multiline = true;
             this.txtbUserName.Name = "txtbUserName";
             this.txtbUserName.Size = new System.Drawing.Size(166, 29);
@@ -93,7 +93,7 @@
             this.checkboxShow.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkboxShow.ForeColor = System.Drawing.Color.White;
             this.checkboxShow.Location = new System.Drawing.Point(94, 383);
-            this.checkboxShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkboxShow.Margin = new System.Windows.Forms.Padding(2);
             this.checkboxShow.Name = "checkboxShow";
             this.checkboxShow.Size = new System.Drawing.Size(136, 37);
             this.checkboxShow.TabIndex = 11;
@@ -105,7 +105,7 @@
             // 
             this.gunaPanel5.BackColor = System.Drawing.Color.Gray;
             this.gunaPanel5.Location = new System.Drawing.Point(151, 318);
-            this.gunaPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.gunaPanel5.Name = "gunaPanel5";
             this.gunaPanel5.Size = new System.Drawing.Size(165, 4);
             this.gunaPanel5.TabIndex = 2;
@@ -114,7 +114,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(2, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(407, 249);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -142,7 +142,7 @@
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.Parent = this.btnLogin;
             this.btnLogin.Location = new System.Drawing.Point(221, 385);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
             this.btnLogin.Size = new System.Drawing.Size(94, 34);
@@ -154,7 +154,7 @@
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.Gray;
             this.gunaPanel1.Location = new System.Drawing.Point(151, 374);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(165, 4);
             this.gunaPanel1.TabIndex = 20;
@@ -169,7 +169,7 @@
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.HoverState.Parent = this.btnExit;
             this.btnExit.Location = new System.Drawing.Point(221, 424);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Parent = this.btnExit;
             this.btnExit.Size = new System.Drawing.Size(94, 34);
@@ -195,7 +195,7 @@
             this.Controls.Add(this.txtbUserName);
             this.Controls.Add(this.checkboxShow);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDangNhap";
             this.Text = "FormDangNhap";
             this.Load += new System.EventHandler(this.FormDangNhap_Load);

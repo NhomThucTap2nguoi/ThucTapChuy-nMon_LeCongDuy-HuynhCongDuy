@@ -13,7 +13,7 @@ namespace GiaoDienCafe_New
 {
     public partial class UserDouong : UserControl
     {
-        string conString = @"Data Source=DESKTOP-GISFHHL;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
+        string conString = @"Data Source=DESKTOP-GISFHHL;Initial Catalog=coffee;Integrated Security=True";
         public UserDouong()
         {
             InitializeComponent();
@@ -51,7 +51,7 @@ namespace GiaoDienCafe_New
 
         private void UserDouong_Load(object sender, EventArgs e)
         {
-            string conString = @"Data Source=DESKTOP-GISFHHL;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
+            string conString = @"Data Source=DESKTOP-GISFHHL;Initial Catalog=coffee;Integrated Security=True";
             conn = new SqlConnection(conString);
             conn.Open();
             loadDl();

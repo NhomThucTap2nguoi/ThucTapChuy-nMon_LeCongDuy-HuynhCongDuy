@@ -42,3 +42,4 @@ C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\o
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.UserHoadon.resources
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.UserDouong.resources
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.UserAccount.resources
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.csprojAssemblyReference.cache
