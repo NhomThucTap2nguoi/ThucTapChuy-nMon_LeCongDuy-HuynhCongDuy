@@ -28,7 +28,6 @@ C:\Users\CONG DUY\Desktop\GiaoDienCafe_New\GiaoDienCafe_New\obj\Debug\GiaoDienCa
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\bin\Debug\GiaoDienCafe_New.exe.config
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\bin\Debug\GiaoDienCafe_New.exe
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\bin\Debug\GiaoDienCafe_New.pdb
-C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.csprojAssemblyReference.cache
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.FormDangNhap.resources
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.FormGiaodien.resources
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.FormPaint.resources
@@ -39,3 +38,7 @@ C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\o
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.csproj.CopyComplete
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.exe
 C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.pdb
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.UserBanhang1.resources
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.UserHoadon.resources
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.UserDouong.resources
+C:\Users\ASUS\Desktop\ThucTapChuy-nMon_LeCongDuy-HuynhCongDuy\GiaoDienCafe_New\obj\Debug\GiaoDienCafe_New.UserAccount.resources

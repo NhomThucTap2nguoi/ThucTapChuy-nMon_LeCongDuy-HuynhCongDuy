@@ -55,6 +55,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\BillDAO.cs" />
+    <Compile Include="DAO\BillInfoDAO.cs" />
+    <Compile Include="DAO\CategoryDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\FoodDAO.cs" />
+    <Compile Include="DAO\MenuDAO.cs" />
+    <Compile Include="DAO\TableDAO.cs" />
+    <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Bill.cs" />
+    <Compile Include="DTO\BillInfo.cs" />
+    <Compile Include="DTO\Category.cs" />
+    <Compile Include="DTO\Food.cs" />
+    <Compile Include="DTO\Menu.cs" />
+    <Compile Include="DTO\Table.cs" />
     <Compile Include="FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +96,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserAccount.Designer.cs">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserBanhang1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserBanhang1.Designer.cs">
+      <DependentUpon>UserBanhang1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDouong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDouong.Designer.cs">
+      <DependentUpon>UserDouong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHoadon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserHoadon.Designer.cs">
+      <DependentUpon>UserHoadon.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +141,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserAccount.resx">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserBanhang1.resx">
+      <DependentUpon>UserBanhang1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDouong.resx">
+      <DependentUpon>UserDouong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHoadon.resx">
+      <DependentUpon>UserHoadon.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
