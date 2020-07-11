@@ -29,43 +29,43 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserDouong));
-            this.dtgvDouong = new System.Windows.Forms.DataGridView();
+            this.dtgvFood = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sss = new Guna.UI.WinForms.GunaPanel();
-            this.txtPrice = new System.Windows.Forms.TextBox();
-            this.cbDanhmuc = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbCategory_food = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.btSua = new Guna.UI2.WinForms.Guna2Button();
             this.btThem = new Guna.UI2.WinForms.Guna2Button();
             this.btXoa = new Guna.UI2.WinForms.Guna2Button();
-            this.txtTenmon = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtbFoodName = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
-            this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbFoodID = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaButton22 = new Guna.UI.WinForms.GunaButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvDouong)).BeginInit();
+            this.nmFoodPrice = new Guna.UI.WinForms.GunaNumeric();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).BeginInit();
             this.sss.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dtgvDouong
+            // dtgvFood
             // 
-            this.dtgvDouong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvDouong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvDouong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgvFood.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvFood.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.name,
             this.idCategory,
             this.price});
-            this.dtgvDouong.Location = new System.Drawing.Point(3, 225);
-            this.dtgvDouong.Name = "dtgvDouong";
-            this.dtgvDouong.Size = new System.Drawing.Size(1263, 335);
-            this.dtgvDouong.TabIndex = 79;
-            this.dtgvDouong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDouong_CellContentClick);
+            this.dtgvFood.Location = new System.Drawing.Point(3, 225);
+            this.dtgvFood.Name = "dtgvFood";
+            this.dtgvFood.Size = new System.Drawing.Size(1263, 335);
+            this.dtgvFood.TabIndex = 79;
+            this.dtgvFood.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDouong_CellContentClick);
             // 
             // id
             // 
@@ -94,15 +94,15 @@
             // sss
             // 
             this.sss.BackColor = System.Drawing.Color.OldLace;
-            this.sss.Controls.Add(this.txtPrice);
-            this.sss.Controls.Add(this.cbDanhmuc);
+            this.sss.Controls.Add(this.nmFoodPrice);
+            this.sss.Controls.Add(this.cbCategory_food);
             this.sss.Controls.Add(this.gunaButton3);
             this.sss.Controls.Add(this.btSua);
             this.sss.Controls.Add(this.btThem);
             this.sss.Controls.Add(this.btXoa);
-            this.sss.Controls.Add(this.txtTenmon);
+            this.sss.Controls.Add(this.txtbFoodName);
             this.sss.Controls.Add(this.gunaLabel7);
-            this.sss.Controls.Add(this.txtID);
+            this.sss.Controls.Add(this.txbFoodID);
             this.sss.Controls.Add(this.gunaLabel4);
             this.sss.Controls.Add(this.gunaLabel3);
             this.sss.Controls.Add(this.gunaLabel2);
@@ -113,39 +113,30 @@
             this.sss.Size = new System.Drawing.Size(1264, 261);
             this.sss.TabIndex = 78;
             // 
-            // txtPrice
+            // cbCategory_food
             // 
-            this.txtPrice.ForeColor = System.Drawing.Color.Black;
-            this.txtPrice.Location = new System.Drawing.Point(708, 149);
-            this.txtPrice.Multiline = true;
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(140, 34);
-            this.txtPrice.TabIndex = 81;
-            // 
-            // cbDanhmuc
-            // 
-            this.cbDanhmuc.BackColor = System.Drawing.Color.Transparent;
-            this.cbDanhmuc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbDanhmuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDanhmuc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbDanhmuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbDanhmuc.FocusedState.Parent = this.cbDanhmuc;
-            this.cbDanhmuc.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbDanhmuc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbDanhmuc.FormattingEnabled = true;
-            this.cbDanhmuc.HoverState.Parent = this.cbDanhmuc;
-            this.cbDanhmuc.ItemHeight = 30;
-            this.cbDanhmuc.Items.AddRange(new object[] {
+            this.cbCategory_food.BackColor = System.Drawing.Color.Transparent;
+            this.cbCategory_food.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbCategory_food.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCategory_food.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbCategory_food.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbCategory_food.FocusedState.Parent = this.cbCategory_food;
+            this.cbCategory_food.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbCategory_food.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbCategory_food.FormattingEnabled = true;
+            this.cbCategory_food.HoverState.Parent = this.cbCategory_food;
+            this.cbCategory_food.ItemHeight = 30;
+            this.cbCategory_food.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4"});
-            this.cbDanhmuc.ItemsAppearance.Parent = this.cbDanhmuc;
-            this.cbDanhmuc.Location = new System.Drawing.Point(218, 139);
-            this.cbDanhmuc.Name = "cbDanhmuc";
-            this.cbDanhmuc.ShadowDecoration.Parent = this.cbDanhmuc;
-            this.cbDanhmuc.Size = new System.Drawing.Size(140, 36);
-            this.cbDanhmuc.TabIndex = 80;
+            this.cbCategory_food.ItemsAppearance.Parent = this.cbCategory_food;
+            this.cbCategory_food.Location = new System.Drawing.Point(218, 139);
+            this.cbCategory_food.Name = "cbCategory_food";
+            this.cbCategory_food.ShadowDecoration.Parent = this.cbCategory_food;
+            this.cbCategory_food.Size = new System.Drawing.Size(140, 36);
+            this.cbCategory_food.TabIndex = 80;
             // 
             // gunaButton3
             // 
@@ -181,7 +172,7 @@
             this.btSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSua.ForeColor = System.Drawing.Color.Black;
             this.btSua.HoverState.Parent = this.btSua;
-            this.btSua.Location = new System.Drawing.Point(1055, 144);
+            this.btSua.Location = new System.Drawing.Point(970, 149);
             this.btSua.Margin = new System.Windows.Forms.Padding(2);
             this.btSua.Name = "btSua";
             this.btSua.ShadowDecoration.Parent = this.btSua;
@@ -226,28 +217,28 @@
             this.btXoa.Text = "Xóa";
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
-            // txtTenmon
+            // txtbFoodName
             // 
-            this.txtTenmon.BorderColor = System.Drawing.Color.Black;
-            this.txtTenmon.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTenmon.DefaultText = "";
-            this.txtTenmon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTenmon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTenmon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenmon.DisabledState.Parent = this.txtTenmon;
-            this.txtTenmon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenmon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenmon.FocusedState.Parent = this.txtTenmon;
-            this.txtTenmon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenmon.HoverState.Parent = this.txtTenmon;
-            this.txtTenmon.Location = new System.Drawing.Point(708, 66);
-            this.txtTenmon.Name = "txtTenmon";
-            this.txtTenmon.PasswordChar = '\0';
-            this.txtTenmon.PlaceholderText = "Nhập tên Hiển thị";
-            this.txtTenmon.SelectedText = "";
-            this.txtTenmon.ShadowDecoration.Parent = this.txtTenmon;
-            this.txtTenmon.Size = new System.Drawing.Size(140, 34);
-            this.txtTenmon.TabIndex = 68;
+            this.txtbFoodName.BorderColor = System.Drawing.Color.Black;
+            this.txtbFoodName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbFoodName.DefaultText = "";
+            this.txtbFoodName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbFoodName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbFoodName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbFoodName.DisabledState.Parent = this.txtbFoodName;
+            this.txtbFoodName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbFoodName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbFoodName.FocusedState.Parent = this.txtbFoodName;
+            this.txtbFoodName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbFoodName.HoverState.Parent = this.txtbFoodName;
+            this.txtbFoodName.Location = new System.Drawing.Point(708, 66);
+            this.txtbFoodName.Name = "txtbFoodName";
+            this.txtbFoodName.PasswordChar = '\0';
+            this.txtbFoodName.PlaceholderText = "Nhập tên Hiển thị";
+            this.txtbFoodName.SelectedText = "";
+            this.txtbFoodName.ShadowDecoration.Parent = this.txtbFoodName;
+            this.txtbFoodName.Size = new System.Drawing.Size(140, 34);
+            this.txtbFoodName.TabIndex = 68;
             // 
             // gunaLabel7
             // 
@@ -261,28 +252,29 @@
             this.gunaLabel7.Text = "Giá";
             this.gunaLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtID
+            // txbFoodID
             // 
-            this.txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtID.DefaultText = "";
-            this.txtID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtID.DisabledState.Parent = this.txtID;
-            this.txtID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtID.FocusedState.Parent = this.txtID;
-            this.txtID.ForeColor = System.Drawing.Color.Black;
-            this.txtID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtID.HoverState.Parent = this.txtID;
-            this.txtID.Location = new System.Drawing.Point(218, 66);
-            this.txtID.Name = "txtID";
-            this.txtID.PasswordChar = '\0';
-            this.txtID.PlaceholderText = "Nhập Tên tài khoản";
-            this.txtID.SelectedText = "";
-            this.txtID.ShadowDecoration.Parent = this.txtID;
-            this.txtID.Size = new System.Drawing.Size(140, 34);
-            this.txtID.TabIndex = 60;
+            this.txbFoodID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbFoodID.DefaultText = "";
+            this.txbFoodID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbFoodID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbFoodID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbFoodID.DisabledState.Parent = this.txbFoodID;
+            this.txbFoodID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbFoodID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbFoodID.FocusedState.Parent = this.txbFoodID;
+            this.txbFoodID.ForeColor = System.Drawing.Color.Black;
+            this.txbFoodID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbFoodID.HoverState.Parent = this.txbFoodID;
+            this.txbFoodID.Location = new System.Drawing.Point(218, 66);
+            this.txbFoodID.Name = "txbFoodID";
+            this.txbFoodID.PasswordChar = '\0';
+            this.txbFoodID.PlaceholderText = "Nhập Tên tài khoản";
+            this.txbFoodID.SelectedText = "";
+            this.txbFoodID.ShadowDecoration.Parent = this.txbFoodID;
+            this.txbFoodID.Size = new System.Drawing.Size(140, 34);
+            this.txbFoodID.TabIndex = 60;
+            this.txbFoodID.TextChanged += new System.EventHandler(this.txbFoodID_TextChanged);
             // 
             // gunaLabel4
             // 
@@ -346,42 +338,60 @@
             this.gunaButton22.Text = "Thông Tin Hàng";
             this.gunaButton22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // nmFoodPrice
+            // 
+            this.nmFoodPrice.BackColor = System.Drawing.Color.Transparent;
+            this.nmFoodPrice.BaseColor = System.Drawing.Color.White;
+            this.nmFoodPrice.BorderColor = System.Drawing.Color.Silver;
+            this.nmFoodPrice.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.nmFoodPrice.ButtonForeColor = System.Drawing.Color.White;
+            this.nmFoodPrice.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.nmFoodPrice.ForeColor = System.Drawing.Color.Black;
+            this.nmFoodPrice.Location = new System.Drawing.Point(708, 149);
+            this.nmFoodPrice.Maximum = ((long)(99999999));
+            this.nmFoodPrice.Minimum = ((long)(0));
+            this.nmFoodPrice.Name = "nmFoodPrice";
+            this.nmFoodPrice.Size = new System.Drawing.Size(140, 30);
+            this.nmFoodPrice.TabIndex = 81;
+            this.nmFoodPrice.Text = "gunaNumeric1";
+            this.nmFoodPrice.Value = ((long)(1));
+            this.nmFoodPrice.ValueChanged += new System.EventHandler(this.nmFoodPrice_ValueChanged);
+            // 
             // UserDouong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dtgvDouong);
+            this.Controls.Add(this.dtgvFood);
             this.Controls.Add(this.sss);
             this.Name = "UserDouong";
             this.Size = new System.Drawing.Size(1283, 560);
             this.Load += new System.EventHandler(this.UserDouong_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvDouong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).EndInit();
             this.sss.ResumeLayout(false);
-            this.sss.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgvDouong;
+        private System.Windows.Forms.DataGridView dtgvFood;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn idCategory;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
         private Guna.UI.WinForms.GunaPanel sss;
-        private System.Windows.Forms.TextBox txtPrice;
-        private Guna.UI2.WinForms.Guna2ComboBox cbDanhmuc;
+        private Guna.UI2.WinForms.Guna2ComboBox cbCategory_food;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private Guna.UI2.WinForms.Guna2Button btSua;
         private Guna.UI2.WinForms.Guna2Button btThem;
         private Guna.UI2.WinForms.Guna2Button btXoa;
-        private Guna.UI2.WinForms.Guna2TextBox txtTenmon;
+        private Guna.UI2.WinForms.Guna2TextBox txtbFoodName;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI2.WinForms.Guna2TextBox txtID;
+        private Guna.UI2.WinForms.Guna2TextBox txbFoodID;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaButton gunaButton22;
+        private Guna.UI.WinForms.GunaNumeric nmFoodPrice;
     }
 }
