@@ -35,7 +35,7 @@ namespace GiaoDienCafe_New.DTO
             }
 
             this.Status = (int)row["status"];
-            this.Discount = (int)row["discount"];
+           // this.Discount = (int)row["discount"];
         }
 
         public int ID

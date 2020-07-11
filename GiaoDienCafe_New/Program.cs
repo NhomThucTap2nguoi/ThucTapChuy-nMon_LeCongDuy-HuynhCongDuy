@@ -16,7 +16,7 @@ namespace GiaoDienCafe_New
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDangNhap());
+            Application.Run(new FormGiaodien());
         }
     }
 }

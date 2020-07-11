@@ -77,6 +77,7 @@ namespace GiaoDienCafe_New
             lsvBill.Items.Clear();
             List<DTO.Menu> listBillInfo = MenuDAO.Instance.GetListMenuByTable(tableID);
             float totalPrice = 0;
+           
 
             foreach (DTO.Menu item in listBillInfo)
             {
@@ -179,7 +180,7 @@ namespace GiaoDienCafe_New
 
                 LoadTable();
             }
-
+           
         }
 
         private void txbTotalPrice_TextChanged(object sender, EventArgs e)
@@ -189,6 +190,11 @@ namespace GiaoDienCafe_New
         #endregion
 
         private void UserBanhang1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lsvBill_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
