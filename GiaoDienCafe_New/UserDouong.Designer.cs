@@ -35,6 +35,7 @@
             this.idCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sss = new Guna.UI.WinForms.GunaPanel();
+            this.btLammoi = new Guna.UI2.WinForms.Guna2Button();
             this.nmFoodPrice = new Guna.UI.WinForms.GunaNumeric();
             this.cbCategory_food = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
@@ -48,7 +49,8 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaButton22 = new Guna.UI.WinForms.GunaButton();
-            this.btLammoi = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSearchFood = new Guna.UI.WinForms.GunaButton();
+            this.txbSearchFoodName = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).BeginInit();
             this.sss.SuspendLayout();
             this.SuspendLayout();
@@ -95,6 +97,8 @@
             // sss
             // 
             this.sss.BackColor = System.Drawing.Color.OldLace;
+            this.sss.Controls.Add(this.txbSearchFoodName);
+            this.sss.Controls.Add(this.btnSearchFood);
             this.sss.Controls.Add(this.btLammoi);
             this.sss.Controls.Add(this.nmFoodPrice);
             this.sss.Controls.Add(this.cbCategory_food);
@@ -115,6 +119,23 @@
             this.sss.Size = new System.Drawing.Size(1264, 261);
             this.sss.TabIndex = 78;
             // 
+            // btLammoi
+            // 
+            this.btLammoi.BorderRadius = 15;
+            this.btLammoi.CheckedState.Parent = this.btLammoi;
+            this.btLammoi.CustomImages.Parent = this.btLammoi;
+            this.btLammoi.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLammoi.ForeColor = System.Drawing.Color.Black;
+            this.btLammoi.HoverState.Parent = this.btLammoi;
+            this.btLammoi.Location = new System.Drawing.Point(1147, 50);
+            this.btLammoi.Margin = new System.Windows.Forms.Padding(2);
+            this.btLammoi.Name = "btLammoi";
+            this.btLammoi.ShadowDecoration.Parent = this.btLammoi;
+            this.btLammoi.Size = new System.Drawing.Size(90, 50);
+            this.btLammoi.TabIndex = 82;
+            this.btLammoi.Text = "Làm mới";
+            this.btLammoi.Click += new System.EventHandler(this.btLammoi_Click);
+            // 
             // nmFoodPrice
             // 
             this.nmFoodPrice.BackColor = System.Drawing.Color.Transparent;
@@ -124,7 +145,7 @@
             this.nmFoodPrice.ButtonForeColor = System.Drawing.Color.White;
             this.nmFoodPrice.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.nmFoodPrice.ForeColor = System.Drawing.Color.Black;
-            this.nmFoodPrice.Location = new System.Drawing.Point(708, 149);
+            this.nmFoodPrice.Location = new System.Drawing.Point(573, 139);
             this.nmFoodPrice.Maximum = ((long)(99999999));
             this.nmFoodPrice.Minimum = ((long)(0));
             this.nmFoodPrice.Name = "nmFoodPrice";
@@ -193,7 +214,7 @@
             this.btSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSua.ForeColor = System.Drawing.Color.Black;
             this.btSua.HoverState.Parent = this.btSua;
-            this.btSua.Location = new System.Drawing.Point(970, 149);
+            this.btSua.Location = new System.Drawing.Point(1017, 149);
             this.btSua.Margin = new System.Windows.Forms.Padding(2);
             this.btSua.Name = "btSua";
             this.btSua.ShadowDecoration.Parent = this.btSua;
@@ -210,7 +231,7 @@
             this.btThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThem.ForeColor = System.Drawing.Color.Black;
             this.btThem.HoverState.Parent = this.btThem;
-            this.btThem.Location = new System.Drawing.Point(970, 66);
+            this.btThem.Location = new System.Drawing.Point(898, 149);
             this.btThem.Margin = new System.Windows.Forms.Padding(2);
             this.btThem.Name = "btThem";
             this.btThem.ShadowDecoration.Parent = this.btThem;
@@ -229,7 +250,7 @@
             this.btXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btXoa.ForeColor = System.Drawing.Color.Black;
             this.btXoa.HoverState.Parent = this.btXoa;
-            this.btXoa.Location = new System.Drawing.Point(1137, 66);
+            this.btXoa.Location = new System.Drawing.Point(1137, 149);
             this.btXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btXoa.Name = "btXoa";
             this.btXoa.ShadowDecoration.Parent = this.btXoa;
@@ -252,7 +273,7 @@
             this.txtbFoodName.FocusedState.Parent = this.txtbFoodName;
             this.txtbFoodName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbFoodName.HoverState.Parent = this.txtbFoodName;
-            this.txtbFoodName.Location = new System.Drawing.Point(708, 66);
+            this.txtbFoodName.Location = new System.Drawing.Point(586, 58);
             this.txtbFoodName.Name = "txtbFoodName";
             this.txtbFoodName.PasswordChar = '\0';
             this.txtbFoodName.PlaceholderText = "Nhập tên Hiển thị";
@@ -265,10 +286,10 @@
             // 
             this.gunaLabel7.BackColor = System.Drawing.Color.DodgerBlue;
             this.gunaLabel7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel7.Location = new System.Drawing.Point(454, 133);
+            this.gunaLabel7.Location = new System.Drawing.Point(457, 125);
             this.gunaLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(90, 50);
+            this.gunaLabel7.Size = new System.Drawing.Size(87, 50);
             this.gunaLabel7.TabIndex = 66;
             this.gunaLabel7.Text = "Giá";
             this.gunaLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -354,27 +375,58 @@
             this.gunaButton22.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton22.OnHoverImage = null;
             this.gunaButton22.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton22.Size = new System.Drawing.Size(817, 34);
+            this.gunaButton22.Size = new System.Drawing.Size(715, 34);
             this.gunaButton22.TabIndex = 30;
             this.gunaButton22.Text = "Thông Tin Hàng";
             this.gunaButton22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btLammoi
+            // btnSearchFood
             // 
-            this.btLammoi.BorderRadius = 15;
-            this.btLammoi.CheckedState.Parent = this.btLammoi;
-            this.btLammoi.CustomImages.Parent = this.btLammoi;
-            this.btLammoi.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLammoi.ForeColor = System.Drawing.Color.Black;
-            this.btLammoi.HoverState.Parent = this.btLammoi;
-            this.btLammoi.Location = new System.Drawing.Point(1147, 149);
-            this.btLammoi.Margin = new System.Windows.Forms.Padding(2);
-            this.btLammoi.Name = "btLammoi";
-            this.btLammoi.ShadowDecoration.Parent = this.btLammoi;
-            this.btLammoi.Size = new System.Drawing.Size(90, 50);
-            this.btLammoi.TabIndex = 82;
-            this.btLammoi.Text = "Làm mới";
-            this.btLammoi.Click += new System.EventHandler(this.btLammoi_Click);
+            this.btnSearchFood.AnimationHoverSpeed = 0.07F;
+            this.btnSearchFood.AnimationSpeed = 0.03F;
+            this.btnSearchFood.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnSearchFood.BorderColor = System.Drawing.Color.Black;
+            this.btnSearchFood.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSearchFood.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSearchFood.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchFood.ForeColor = System.Drawing.Color.Black;
+            this.btnSearchFood.Image = null;
+            this.btnSearchFood.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnSearchFood.Location = new System.Drawing.Point(993, 50);
+            this.btnSearchFood.Name = "btnSearchFood";
+            this.btnSearchFood.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnSearchFood.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSearchFood.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSearchFood.OnHoverImage = null;
+            this.btnSearchFood.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSearchFood.Size = new System.Drawing.Size(92, 42);
+            this.btnSearchFood.TabIndex = 84;
+            this.btnSearchFood.Text = "Tìm";
+            this.btnSearchFood.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSearchFood.Click += new System.EventHandler(this.btnSearchFood_Click);
+            // 
+            // txbSearchFoodName
+            // 
+            this.txbSearchFoodName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbSearchFoodName.DefaultText = "";
+            this.txbSearchFoodName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbSearchFoodName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbSearchFoodName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSearchFoodName.DisabledState.Parent = this.txbSearchFoodName;
+            this.txbSearchFoodName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSearchFoodName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSearchFoodName.FocusedState.Parent = this.txbSearchFoodName;
+            this.txbSearchFoodName.ForeColor = System.Drawing.Color.Black;
+            this.txbSearchFoodName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSearchFoodName.HoverState.Parent = this.txbSearchFoodName;
+            this.txbSearchFoodName.Location = new System.Drawing.Point(784, 50);
+            this.txbSearchFoodName.Name = "txbSearchFoodName";
+            this.txbSearchFoodName.PasswordChar = '\0';
+            this.txbSearchFoodName.PlaceholderText = "Nhập tên Hiển thị";
+            this.txbSearchFoodName.SelectedText = "";
+            this.txbSearchFoodName.ShadowDecoration.Parent = this.txbSearchFoodName;
+            this.txbSearchFoodName.Size = new System.Drawing.Size(178, 37);
+            this.txbSearchFoodName.TabIndex = 85;
             // 
             // UserDouong
             // 
@@ -413,5 +465,7 @@
         private Guna.UI.WinForms.GunaButton gunaButton22;
         private Guna.UI.WinForms.GunaNumeric nmFoodPrice;
         private Guna.UI2.WinForms.Guna2Button btLammoi;
+        private Guna.UI.WinForms.GunaButton btnSearchFood;
+        private Guna.UI2.WinForms.Guna2TextBox txbSearchFoodName;
     }
 }

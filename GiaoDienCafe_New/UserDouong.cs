@@ -27,15 +27,15 @@ namespace GiaoDienCafe_New
         {
             dtgvFood.DataSource = foodlist;
 
-           
+
             LoadListFood();
 
             LoadCategoryIntoComboBox(cbCategory_food);
             AddFoodBinding();
         }
-     
 
-       
+
+
 
         void LoadListFood()
         {
@@ -61,10 +61,14 @@ namespace GiaoDienCafe_New
             return lstFood;
         }
         #endregion
+        private void btnSearchFood_Click(object sender, EventArgs e)
+        {
+            foodlist.DataSource = SearchFoodByName(txbSearchFoodName.Text);
+        }
 
         private void UserDouong_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void dtgvDouong_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -136,7 +140,7 @@ namespace GiaoDienCafe_New
                 MessageBox.Show("Có lỗi khi xóa thức ăn");
             }
         }
-         private event EventHandler insertFood;
+        private event EventHandler insertFood;
         public event EventHandler InsertFood
         {
             add { insertFood += value; }
@@ -177,7 +181,7 @@ namespace GiaoDienCafe_New
 
         private void nmFoodPrice_ValueChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btLammoi_Click(object sender, EventArgs e)
@@ -187,5 +191,8 @@ namespace GiaoDienCafe_New
             cbCategory_food.Text = "";
             nmFoodPrice.Text = "";
         }
+
+       
+
     }
 }
