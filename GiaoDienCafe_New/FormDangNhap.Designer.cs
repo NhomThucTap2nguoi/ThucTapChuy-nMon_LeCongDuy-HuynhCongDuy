@@ -53,6 +53,7 @@
             this.txtbPassWord.Name = "txtbPassWord";
             this.txtbPassWord.Size = new System.Drawing.Size(166, 26);
             this.txtbPassWord.TabIndex = 17;
+            this.txtbPassWord.Text = "123";
             this.txtbPassWord.UseSystemPasswordChar = true;
             this.txtbPassWord.TextChanged += new System.EventHandler(this.txtbPassWord_TextChanged);
             // 
@@ -87,6 +88,7 @@
             this.txtbUserName.Name = "txtbUserName";
             this.txtbUserName.Size = new System.Drawing.Size(166, 29);
             this.txtbUserName.TabIndex = 17;
+            this.txtbUserName.Text = "duy";
             // 
             // checkboxShow
             // 

@@ -60,5 +60,12 @@ namespace GiaoDienCafe_New
         {
             userAccount1.BringToFront();
         }
+
+        private void gunaAdvenceButton6_Click(object sender, EventArgs e)
+        {
+            FormPaint f = new FormPaint();
+            this.Hide();
+            f.ShowDialog();
+        }
     }
 }

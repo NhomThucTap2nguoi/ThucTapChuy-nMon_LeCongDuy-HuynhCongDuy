@@ -214,6 +214,7 @@
             this.gunaAdvenceButton6.TabIndex = 6;
             this.gunaAdvenceButton6.Text = "PAINT";
             this.gunaAdvenceButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton6.Click += new System.EventHandler(this.gunaAdvenceButton6_Click);
             // 
             // gunaAdvenceButton5
             // 
