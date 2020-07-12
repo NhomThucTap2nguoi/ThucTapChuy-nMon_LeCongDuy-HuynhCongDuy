@@ -35,6 +35,10 @@
             this.PassWord = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaPanel8 = new Guna.UI.WinForms.GunaPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtMahoa = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lbMahoa = new System.Windows.Forms.Label();
+            this.btMaHoa = new Guna.UI2.WinForms.Guna2Button();
             this.cbVitri = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.btLammoi = new Guna.UI2.WinForms.Guna2Button();
@@ -49,10 +53,6 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaButton22 = new Guna.UI.WinForms.GunaButton();
-            this.btMaHoa = new Guna.UI2.WinForms.Guna2Button();
-            this.lbMahoa = new System.Windows.Forms.Label();
-            this.txtMahoa = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTaikhoan)).BeginInit();
             this.gunaPanel8.SuspendLayout();
             this.SuspendLayout();
@@ -122,6 +122,65 @@
             this.gunaPanel8.Name = "gunaPanel8";
             this.gunaPanel8.Size = new System.Drawing.Size(1263, 217);
             this.gunaPanel8.TabIndex = 77;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(960, 185);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 26);
+            this.label1.TabIndex = 84;
+            this.label1.Text = "Đoạn Code Mã hóa:";
+            // 
+            // txtMahoa
+            // 
+            this.txtMahoa.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMahoa.DefaultText = "";
+            this.txtMahoa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMahoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMahoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMahoa.DisabledState.Parent = this.txtMahoa;
+            this.txtMahoa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMahoa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMahoa.FocusedState.Parent = this.txtMahoa;
+            this.txtMahoa.ForeColor = System.Drawing.Color.Black;
+            this.txtMahoa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMahoa.HoverState.Parent = this.txtMahoa;
+            this.txtMahoa.Location = new System.Drawing.Point(1100, 135);
+            this.txtMahoa.Name = "txtMahoa";
+            this.txtMahoa.PasswordChar = '\0';
+            this.txtMahoa.PlaceholderText = "Nhập Mật khẩu cần mã hóa";
+            this.txtMahoa.SelectedText = "";
+            this.txtMahoa.ShadowDecoration.Parent = this.txtMahoa;
+            this.txtMahoa.Size = new System.Drawing.Size(140, 37);
+            this.txtMahoa.TabIndex = 83;
+            // 
+            // lbMahoa
+            // 
+            this.lbMahoa.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMahoa.Location = new System.Drawing.Point(1103, 185);
+            this.lbMahoa.Name = "lbMahoa";
+            this.lbMahoa.Size = new System.Drawing.Size(137, 26);
+            this.lbMahoa.TabIndex = 82;
+            this.lbMahoa.Text = ".";
+            // 
+            // btMaHoa
+            // 
+            this.btMaHoa.BorderRadius = 15;
+            this.btMaHoa.CheckedState.Parent = this.btMaHoa;
+            this.btMaHoa.CustomImages.Parent = this.btMaHoa;
+            this.btMaHoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btMaHoa.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMaHoa.ForeColor = System.Drawing.Color.White;
+            this.btMaHoa.HoverState.Parent = this.btMaHoa;
+            this.btMaHoa.Location = new System.Drawing.Point(996, 123);
+            this.btMaHoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btMaHoa.Name = "btMaHoa";
+            this.btMaHoa.ShadowDecoration.Parent = this.btMaHoa;
+            this.btMaHoa.Size = new System.Drawing.Size(90, 50);
+            this.btMaHoa.TabIndex = 81;
+            this.btMaHoa.Text = "Mã Hóa MD5";
+            this.btMaHoa.Click += new System.EventHandler(this.btMaHoa_Click);
             // 
             // cbVitri
             // 
@@ -383,7 +442,7 @@
             this.gunaButton22.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton22.Image")));
             this.gunaButton22.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton22.ImageSize = new System.Drawing.Size(25, 25);
-            this.gunaButton22.Location = new System.Drawing.Point(32, 6);
+            this.gunaButton22.Location = new System.Drawing.Point(38, 6);
             this.gunaButton22.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton22.Name = "gunaButton22";
             this.gunaButton22.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -391,69 +450,10 @@
             this.gunaButton22.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton22.OnHoverImage = null;
             this.gunaButton22.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton22.Size = new System.Drawing.Size(705, 34);
+            this.gunaButton22.Size = new System.Drawing.Size(699, 34);
             this.gunaButton22.TabIndex = 30;
             this.gunaButton22.Text = "Thông Tin Hàng";
             this.gunaButton22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btMaHoa
-            // 
-            this.btMaHoa.BorderRadius = 15;
-            this.btMaHoa.CheckedState.Parent = this.btMaHoa;
-            this.btMaHoa.CustomImages.Parent = this.btMaHoa;
-            this.btMaHoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
-            this.btMaHoa.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btMaHoa.ForeColor = System.Drawing.Color.White;
-            this.btMaHoa.HoverState.Parent = this.btMaHoa;
-            this.btMaHoa.Location = new System.Drawing.Point(996, 123);
-            this.btMaHoa.Margin = new System.Windows.Forms.Padding(2);
-            this.btMaHoa.Name = "btMaHoa";
-            this.btMaHoa.ShadowDecoration.Parent = this.btMaHoa;
-            this.btMaHoa.Size = new System.Drawing.Size(90, 50);
-            this.btMaHoa.TabIndex = 81;
-            this.btMaHoa.Text = "Mã Hóa MD5";
-            this.btMaHoa.Click += new System.EventHandler(this.btMaHoa_Click);
-            // 
-            // lbMahoa
-            // 
-            this.lbMahoa.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMahoa.Location = new System.Drawing.Point(1103, 185);
-            this.lbMahoa.Name = "lbMahoa";
-            this.lbMahoa.Size = new System.Drawing.Size(137, 26);
-            this.lbMahoa.TabIndex = 82;
-            this.lbMahoa.Text = ".";
-            // 
-            // txtMahoa
-            // 
-            this.txtMahoa.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMahoa.DefaultText = "";
-            this.txtMahoa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMahoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMahoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMahoa.DisabledState.Parent = this.txtMahoa;
-            this.txtMahoa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMahoa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMahoa.FocusedState.Parent = this.txtMahoa;
-            this.txtMahoa.ForeColor = System.Drawing.Color.Black;
-            this.txtMahoa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMahoa.HoverState.Parent = this.txtMahoa;
-            this.txtMahoa.Location = new System.Drawing.Point(1100, 135);
-            this.txtMahoa.Name = "txtMahoa";
-            this.txtMahoa.PasswordChar = '\0';
-            this.txtMahoa.PlaceholderText = "Nhập Mật khẩu cần mã hóa";
-            this.txtMahoa.SelectedText = "";
-            this.txtMahoa.ShadowDecoration.Parent = this.txtMahoa;
-            this.txtMahoa.Size = new System.Drawing.Size(140, 37);
-            this.txtMahoa.TabIndex = 83;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(960, 185);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 26);
-            this.label1.TabIndex = 84;
-            this.label1.Text = "Đoạn Code Mã hóa:";
             // 
             // UserAccount
             // 

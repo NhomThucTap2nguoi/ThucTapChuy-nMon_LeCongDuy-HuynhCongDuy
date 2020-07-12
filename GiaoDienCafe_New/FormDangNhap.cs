@@ -72,6 +72,10 @@ namespace GiaoDienCafe_New
                 FormGiaodien f = new FormGiaodien(dt.Rows[0][0].ToString(),dt.Rows[0][1].ToString(),dt.Rows[0][2].ToString(),dt.Rows[0][3].ToString());
                 f.Show();
             }
+            else
+            {
+                MessageBox.Show("Kiểm tra lại Thông tin đầy đủ", "Thông báo");
+            }
 
             /*string userName = txtbUserName.Text;
             string passWord = txtbPassWord.Text;

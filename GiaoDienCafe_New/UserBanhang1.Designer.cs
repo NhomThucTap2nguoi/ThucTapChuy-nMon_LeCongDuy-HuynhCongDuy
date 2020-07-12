@@ -53,8 +53,6 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.gunaPanel3.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel8.SuspendLayout();
@@ -189,6 +187,7 @@
             // 
             // nmDiscount
             // 
+            this.nmDiscount.BackColor = System.Drawing.Color.Transparent;
             this.nmDiscount.BaseColor = System.Drawing.Color.White;
             this.nmDiscount.BorderColor = System.Drawing.Color.Silver;
             this.nmDiscount.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -199,6 +198,7 @@
             this.nmDiscount.Maximum = ((long)(100));
             this.nmDiscount.Minimum = ((long)(0));
             this.nmDiscount.Name = "nmDiscount";
+            this.nmDiscount.Radius = 5;
             this.nmDiscount.Size = new System.Drawing.Size(101, 30);
             this.nmDiscount.TabIndex = 2;
             this.nmDiscount.Text = "gunaNumeric1";
@@ -436,7 +436,5 @@
         private Guna.UI.WinForms.GunaButton btnSwitchTable;
         private Guna.UI.WinForms.GunaNumeric nmDiscount;
         private System.Windows.Forms.ComboBox cbSwitchTable;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }

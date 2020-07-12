@@ -302,12 +302,15 @@ namespace GiaoDienCafe_New
 
         private void FormPaint_FormClosing(object sender, FormClosingEventArgs e)
         {
-            switch (_menuExitClicked)
+            FormGiaodien fm = new FormGiaodien();
+            this.Hide();
+            fm.ShowDialog();
+           /* switch (_menuExitClicked)
             {
                 case false:
                     e.Cancel = !FormNeedClose();
                     break;
-            }
+            }*/
         }
 
         private void FormPaint_Load(object sender, EventArgs e)

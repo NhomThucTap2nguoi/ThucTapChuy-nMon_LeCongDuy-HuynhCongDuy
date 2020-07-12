@@ -79,6 +79,7 @@ namespace GiaoDienCafe_New
         private void gunaAdvenceButton10_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bạn có muốn thoát Chương Trình ?", "Thông báo",MessageBoxButtons.YesNo);
+
             Application.Exit();
         }
 
@@ -128,6 +129,7 @@ namespace GiaoDienCafe_New
 
         private void gunaAdvenceButton8_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Bạn có muốn Đăng Xuất không ?", "Thông báo", MessageBoxButtons.YesNo);
             FormDangNhap dn = new FormDangNhap();
             this.Hide();
             dn.ShowDialog();
