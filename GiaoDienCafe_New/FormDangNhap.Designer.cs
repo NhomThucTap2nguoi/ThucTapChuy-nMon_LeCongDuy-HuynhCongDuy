@@ -40,6 +40,8 @@
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.cbPhanquyen = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -48,7 +50,7 @@
             // txtbPassWord
             // 
             this.txtbPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbPassWord.Location = new System.Drawing.Point(151, 347);
+            this.txtbPassWord.Location = new System.Drawing.Point(161, 435);
             this.txtbPassWord.Margin = new System.Windows.Forms.Padding(2);
             this.txtbPassWord.Name = "txtbPassWord";
             this.txtbPassWord.Size = new System.Drawing.Size(166, 26);
@@ -60,7 +62,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(94, 271);
+            this.pictureBox2.Location = new System.Drawing.Point(104, 356);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(52, 51);
@@ -71,7 +73,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(94, 327);
+            this.pictureBox3.Location = new System.Drawing.Point(104, 412);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(52, 54);
@@ -82,7 +84,7 @@
             // txtbUserName
             // 
             this.txtbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbUserName.Location = new System.Drawing.Point(151, 291);
+            this.txtbUserName.Location = new System.Drawing.Point(161, 376);
             this.txtbUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txtbUserName.Multiline = true;
             this.txtbUserName.Name = "txtbUserName";
@@ -94,7 +96,7 @@
             // 
             this.checkboxShow.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkboxShow.ForeColor = System.Drawing.Color.White;
-            this.checkboxShow.Location = new System.Drawing.Point(94, 383);
+            this.checkboxShow.Location = new System.Drawing.Point(104, 468);
             this.checkboxShow.Margin = new System.Windows.Forms.Padding(2);
             this.checkboxShow.Name = "checkboxShow";
             this.checkboxShow.Size = new System.Drawing.Size(136, 37);
@@ -106,7 +108,7 @@
             // gunaPanel5
             // 
             this.gunaPanel5.BackColor = System.Drawing.Color.Gray;
-            this.gunaPanel5.Location = new System.Drawing.Point(151, 318);
+            this.gunaPanel5.Location = new System.Drawing.Point(161, 403);
             this.gunaPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.gunaPanel5.Name = "gunaPanel5";
             this.gunaPanel5.Size = new System.Drawing.Size(165, 4);
@@ -115,10 +117,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(407, 249);
+            this.pictureBox1.Size = new System.Drawing.Size(404, 256);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -127,7 +129,7 @@
             // 
             this.lbIncorrect.Font = new System.Drawing.Font("Tahoma", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbIncorrect.ForeColor = System.Drawing.Color.Red;
-            this.lbIncorrect.Location = new System.Drawing.Point(56, 474);
+            this.lbIncorrect.Location = new System.Drawing.Point(56, 559);
             this.lbIncorrect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbIncorrect.Name = "lbIncorrect";
             this.lbIncorrect.Size = new System.Drawing.Size(307, 19);
@@ -143,7 +145,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.Parent = this.btnLogin;
-            this.btnLogin.Location = new System.Drawing.Point(221, 385);
+            this.btnLogin.Location = new System.Drawing.Point(231, 470);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
@@ -155,7 +157,7 @@
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.Gray;
-            this.gunaPanel1.Location = new System.Drawing.Point(151, 374);
+            this.gunaPanel1.Location = new System.Drawing.Point(161, 459);
             this.gunaPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(165, 4);
@@ -170,7 +172,7 @@
             this.btnExit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.HoverState.Parent = this.btnExit;
-            this.btnExit.Location = new System.Drawing.Point(221, 424);
+            this.btnExit.Location = new System.Drawing.Point(231, 509);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Parent = this.btnExit;
@@ -179,12 +181,34 @@
             this.btnExit.Text = "Thoát";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // cbPhanquyen
+            // 
+            this.cbPhanquyen.FormattingEnabled = true;
+            this.cbPhanquyen.Items.AddRange(new object[] {
+            "1: Admin",
+            "0 : Nhân viên"});
+            this.cbPhanquyen.Location = new System.Drawing.Point(192, 322);
+            this.cbPhanquyen.Name = "cbPhanquyen";
+            this.cbPhanquyen.Size = new System.Drawing.Size(133, 21);
+            this.cbPhanquyen.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(101, 322);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 31);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Chọn Vị trí :";
+            // 
             // FormDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
-            this.ClientSize = new System.Drawing.Size(413, 500);
+            this.ClientSize = new System.Drawing.Size(409, 587);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cbPhanquyen);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.btnLogin);
@@ -224,5 +248,7 @@
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI2.WinForms.Guna2Button btnExit;
+        private System.Windows.Forms.ComboBox cbPhanquyen;
+        private System.Windows.Forms.Label label2;
     }
 }

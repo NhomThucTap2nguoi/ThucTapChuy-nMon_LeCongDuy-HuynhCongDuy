@@ -35,6 +35,8 @@
             this.idCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sss = new Guna.UI.WinForms.GunaPanel();
+            this.txbSearchFoodName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSearchFood = new Guna.UI.WinForms.GunaButton();
             this.btLammoi = new Guna.UI2.WinForms.Guna2Button();
             this.nmFoodPrice = new Guna.UI.WinForms.GunaNumeric();
             this.cbCategory_food = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -49,8 +51,6 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaButton22 = new Guna.UI.WinForms.GunaButton();
-            this.btnSearchFood = new Guna.UI.WinForms.GunaButton();
-            this.txbSearchFoodName = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).BeginInit();
             this.sss.SuspendLayout();
             this.SuspendLayout();
@@ -64,9 +64,9 @@
             this.name,
             this.idCategory,
             this.price});
-            this.dtgvFood.Location = new System.Drawing.Point(3, 225);
+            this.dtgvFood.Location = new System.Drawing.Point(3, 250);
             this.dtgvFood.Name = "dtgvFood";
-            this.dtgvFood.Size = new System.Drawing.Size(1263, 335);
+            this.dtgvFood.Size = new System.Drawing.Size(1263, 310);
             this.dtgvFood.TabIndex = 79;
             this.dtgvFood.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDouong_CellContentClick);
             // 
@@ -119,19 +119,68 @@
             this.sss.Size = new System.Drawing.Size(1264, 261);
             this.sss.TabIndex = 78;
             // 
+            // txbSearchFoodName
+            // 
+            this.txbSearchFoodName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbSearchFoodName.DefaultText = "";
+            this.txbSearchFoodName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbSearchFoodName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbSearchFoodName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSearchFoodName.DisabledState.Parent = this.txbSearchFoodName;
+            this.txbSearchFoodName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSearchFoodName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSearchFoodName.FocusedState.Parent = this.txbSearchFoodName;
+            this.txbSearchFoodName.ForeColor = System.Drawing.Color.Black;
+            this.txbSearchFoodName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSearchFoodName.HoverState.Parent = this.txbSearchFoodName;
+            this.txbSearchFoodName.Location = new System.Drawing.Point(1068, 63);
+            this.txbSearchFoodName.Name = "txbSearchFoodName";
+            this.txbSearchFoodName.PasswordChar = '\0';
+            this.txbSearchFoodName.PlaceholderText = "Nhập Thức uống cần tìm";
+            this.txbSearchFoodName.SelectedText = "";
+            this.txbSearchFoodName.ShadowDecoration.Parent = this.txbSearchFoodName;
+            this.txbSearchFoodName.Size = new System.Drawing.Size(169, 37);
+            this.txbSearchFoodName.TabIndex = 85;
+            // 
+            // btnSearchFood
+            // 
+            this.btnSearchFood.AnimationHoverSpeed = 0.07F;
+            this.btnSearchFood.AnimationSpeed = 0.03F;
+            this.btnSearchFood.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btnSearchFood.BorderColor = System.Drawing.Color.Black;
+            this.btnSearchFood.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSearchFood.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSearchFood.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchFood.ForeColor = System.Drawing.Color.White;
+            this.btnSearchFood.Image = null;
+            this.btnSearchFood.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnSearchFood.Location = new System.Drawing.Point(970, 58);
+            this.btnSearchFood.Name = "btnSearchFood";
+            this.btnSearchFood.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnSearchFood.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSearchFood.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSearchFood.OnHoverImage = null;
+            this.btnSearchFood.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSearchFood.Size = new System.Drawing.Size(92, 42);
+            this.btnSearchFood.TabIndex = 84;
+            this.btnSearchFood.Text = "Tìm";
+            this.btnSearchFood.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSearchFood.Click += new System.EventHandler(this.btnSearchFood_Click);
+            // 
             // btLammoi
             // 
             this.btLammoi.BorderRadius = 15;
             this.btLammoi.CheckedState.Parent = this.btLammoi;
             this.btLammoi.CustomImages.Parent = this.btLammoi;
-            this.btLammoi.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLammoi.ForeColor = System.Drawing.Color.Black;
+            this.btLammoi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btLammoi.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLammoi.ForeColor = System.Drawing.Color.White;
             this.btLammoi.HoverState.Parent = this.btLammoi;
-            this.btLammoi.Location = new System.Drawing.Point(1147, 50);
+            this.btLammoi.Location = new System.Drawing.Point(1137, 119);
             this.btLammoi.Margin = new System.Windows.Forms.Padding(2);
             this.btLammoi.Name = "btLammoi";
             this.btLammoi.ShadowDecoration.Parent = this.btLammoi;
-            this.btLammoi.Size = new System.Drawing.Size(90, 50);
+            this.btLammoi.Size = new System.Drawing.Size(100, 50);
             this.btLammoi.TabIndex = 82;
             this.btLammoi.Text = "Làm mới";
             this.btLammoi.Click += new System.EventHandler(this.btLammoi_Click);
@@ -145,7 +194,7 @@
             this.nmFoodPrice.ButtonForeColor = System.Drawing.Color.White;
             this.nmFoodPrice.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.nmFoodPrice.ForeColor = System.Drawing.Color.Black;
-            this.nmFoodPrice.Location = new System.Drawing.Point(573, 139);
+            this.nmFoodPrice.Location = new System.Drawing.Point(586, 145);
             this.nmFoodPrice.Maximum = ((long)(99999999));
             this.nmFoodPrice.Minimum = ((long)(0));
             this.nmFoodPrice.Name = "nmFoodPrice";
@@ -184,12 +233,13 @@
             // 
             this.gunaButton3.AnimationHoverSpeed = 0.07F;
             this.gunaButton3.AnimationSpeed = 0.03F;
-            this.gunaButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.gunaButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.gunaButton3.BorderColor = System.Drawing.Color.Black;
             this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton3.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton3.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
             this.gunaButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton3.ImageSize = new System.Drawing.Size(25, 25);
@@ -211,10 +261,11 @@
             this.btSua.BorderRadius = 15;
             this.btSua.CheckedState.Parent = this.btSua;
             this.btSua.CustomImages.Parent = this.btSua;
-            this.btSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSua.ForeColor = System.Drawing.Color.Black;
+            this.btSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btSua.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSua.ForeColor = System.Drawing.Color.White;
             this.btSua.HoverState.Parent = this.btSua;
-            this.btSua.Location = new System.Drawing.Point(1017, 149);
+            this.btSua.Location = new System.Drawing.Point(970, 178);
             this.btSua.Margin = new System.Windows.Forms.Padding(2);
             this.btSua.Name = "btSua";
             this.btSua.ShadowDecoration.Parent = this.btSua;
@@ -228,10 +279,11 @@
             this.btThem.BorderRadius = 15;
             this.btThem.CheckedState.Parent = this.btThem;
             this.btThem.CustomImages.Parent = this.btThem;
-            this.btThem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.ForeColor = System.Drawing.Color.Black;
+            this.btThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btThem.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.ForeColor = System.Drawing.Color.White;
             this.btThem.HoverState.Parent = this.btThem;
-            this.btThem.Location = new System.Drawing.Point(898, 149);
+            this.btThem.Location = new System.Drawing.Point(970, 119);
             this.btThem.Margin = new System.Windows.Forms.Padding(2);
             this.btThem.Name = "btThem";
             this.btThem.ShadowDecoration.Parent = this.btThem;
@@ -247,10 +299,11 @@
             this.btXoa.BorderRadius = 15;
             this.btXoa.CheckedState.Parent = this.btXoa;
             this.btXoa.CustomImages.Parent = this.btXoa;
-            this.btXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.ForeColor = System.Drawing.Color.Black;
+            this.btXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btXoa.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.ForeColor = System.Drawing.Color.White;
             this.btXoa.HoverState.Parent = this.btXoa;
-            this.btXoa.Location = new System.Drawing.Point(1137, 149);
+            this.btXoa.Location = new System.Drawing.Point(1137, 178);
             this.btXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btXoa.Name = "btXoa";
             this.btXoa.ShadowDecoration.Parent = this.btXoa;
@@ -276,16 +329,17 @@
             this.txtbFoodName.Location = new System.Drawing.Point(586, 58);
             this.txtbFoodName.Name = "txtbFoodName";
             this.txtbFoodName.PasswordChar = '\0';
-            this.txtbFoodName.PlaceholderText = "Nhập tên Hiển thị";
+            this.txtbFoodName.PlaceholderText = "NhậpTên Món";
             this.txtbFoodName.SelectedText = "";
             this.txtbFoodName.ShadowDecoration.Parent = this.txtbFoodName;
-            this.txtbFoodName.Size = new System.Drawing.Size(140, 34);
+            this.txtbFoodName.Size = new System.Drawing.Size(160, 34);
             this.txtbFoodName.TabIndex = 68;
             // 
             // gunaLabel7
             // 
-            this.gunaLabel7.BackColor = System.Drawing.Color.DodgerBlue;
-            this.gunaLabel7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaLabel7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel7.ForeColor = System.Drawing.Color.White;
             this.gunaLabel7.Location = new System.Drawing.Point(457, 125);
             this.gunaLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel7.Name = "gunaLabel7";
@@ -320,8 +374,9 @@
             // 
             // gunaLabel4
             // 
-            this.gunaLabel4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.gunaLabel4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaLabel4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.ForeColor = System.Drawing.Color.White;
             this.gunaLabel4.Location = new System.Drawing.Point(61, 125);
             this.gunaLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel4.Name = "gunaLabel4";
@@ -332,8 +387,9 @@
             // 
             // gunaLabel3
             // 
-            this.gunaLabel3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.ForeColor = System.Drawing.Color.White;
             this.gunaLabel3.Location = new System.Drawing.Point(61, 58);
             this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel3.Name = "gunaLabel3";
@@ -344,8 +400,9 @@
             // 
             // gunaLabel2
             // 
-            this.gunaLabel2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.White;
             this.gunaLabel2.Location = new System.Drawing.Point(454, 58);
             this.gunaLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel2.Name = "gunaLabel2";
@@ -358,12 +415,13 @@
             // 
             this.gunaButton22.AnimationHoverSpeed = 0.07F;
             this.gunaButton22.AnimationSpeed = 0.03F;
-            this.gunaButton22.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.gunaButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaButton22.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.gunaButton22.BorderColor = System.Drawing.Color.Black;
             this.gunaButton22.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton22.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton22.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton22.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton22.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton22.ForeColor = System.Drawing.Color.White;
             this.gunaButton22.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton22.Image")));
             this.gunaButton22.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton22.ImageSize = new System.Drawing.Size(25, 25);
@@ -379,54 +437,6 @@
             this.gunaButton22.TabIndex = 30;
             this.gunaButton22.Text = "Thông Tin Hàng";
             this.gunaButton22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnSearchFood
-            // 
-            this.btnSearchFood.AnimationHoverSpeed = 0.07F;
-            this.btnSearchFood.AnimationSpeed = 0.03F;
-            this.btnSearchFood.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnSearchFood.BorderColor = System.Drawing.Color.Black;
-            this.btnSearchFood.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSearchFood.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSearchFood.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchFood.ForeColor = System.Drawing.Color.Black;
-            this.btnSearchFood.Image = null;
-            this.btnSearchFood.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSearchFood.Location = new System.Drawing.Point(993, 50);
-            this.btnSearchFood.Name = "btnSearchFood";
-            this.btnSearchFood.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnSearchFood.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnSearchFood.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnSearchFood.OnHoverImage = null;
-            this.btnSearchFood.OnPressedColor = System.Drawing.Color.Black;
-            this.btnSearchFood.Size = new System.Drawing.Size(92, 42);
-            this.btnSearchFood.TabIndex = 84;
-            this.btnSearchFood.Text = "Tìm";
-            this.btnSearchFood.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnSearchFood.Click += new System.EventHandler(this.btnSearchFood_Click);
-            // 
-            // txbSearchFoodName
-            // 
-            this.txbSearchFoodName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbSearchFoodName.DefaultText = "";
-            this.txbSearchFoodName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbSearchFoodName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbSearchFoodName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbSearchFoodName.DisabledState.Parent = this.txbSearchFoodName;
-            this.txbSearchFoodName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbSearchFoodName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbSearchFoodName.FocusedState.Parent = this.txbSearchFoodName;
-            this.txbSearchFoodName.ForeColor = System.Drawing.Color.Black;
-            this.txbSearchFoodName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbSearchFoodName.HoverState.Parent = this.txbSearchFoodName;
-            this.txbSearchFoodName.Location = new System.Drawing.Point(784, 50);
-            this.txbSearchFoodName.Name = "txbSearchFoodName";
-            this.txbSearchFoodName.PasswordChar = '\0';
-            this.txbSearchFoodName.PlaceholderText = "Nhập tên Hiển thị";
-            this.txbSearchFoodName.SelectedText = "";
-            this.txbSearchFoodName.ShadowDecoration.Parent = this.txbSearchFoodName;
-            this.txbSearchFoodName.Size = new System.Drawing.Size(178, 37);
-            this.txbSearchFoodName.TabIndex = 85;
             // 
             // UserDouong
             // 

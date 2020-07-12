@@ -114,6 +114,12 @@
     <Compile Include="UserDouong.Designer.cs">
       <DependentUpon>UserDouong.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserGioiThieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserGioiThieu.Designer.cs">
+      <DependentUpon>UserGioiThieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserHoadon.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -149,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserDouong.resx">
       <DependentUpon>UserDouong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserGioiThieu.resx">
+      <DependentUpon>UserGioiThieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserHoadon.resx">
       <DependentUpon>UserHoadon.cs</DependentUpon>

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.Security.Cryptography;
 namespace GiaoDienCafe_New
 {
     public partial class UserAccount : UserControl
@@ -30,6 +30,8 @@ namespace GiaoDienCafe_New
             return data;
         }
         SqlConnection conn;
+
+        MD5 md = MD5.Create();
         public void Hienthi()
         {
             string sqlSELECT = "select *from Account ";
@@ -125,6 +127,19 @@ namespace GiaoDienCafe_New
             txtHienthi.Text = "";
             txtMatkhau.Text = "";
             cbVitri.Text = "";
+        }
+
+        private void btMaHoa_Click(object sender, EventArgs e)
+        {
+            byte[] inputStr = System.Text.Encoding.ASCII.GetBytes(txtMahoa.Text);
+            byte[] hash = md.ComputeHash(inputStr);
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < hash.Length; i++)
+            {
+                sb.Append(hash[i].ToString("X2"));
+            }
+            lbMahoa.Text = sb.ToString();
         }
     }
 }

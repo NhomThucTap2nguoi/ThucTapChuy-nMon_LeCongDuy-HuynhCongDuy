@@ -29,7 +29,7 @@ namespace GiaoDienCafe_New.DAO
 
         private AccountDAO() { }
 
-        public bool Login(string username, string password)
+        public bool Login(string username, string password, string type)
         {
             string query = "dbo.USP_Login @userName , @passWord";
             DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { username, password });

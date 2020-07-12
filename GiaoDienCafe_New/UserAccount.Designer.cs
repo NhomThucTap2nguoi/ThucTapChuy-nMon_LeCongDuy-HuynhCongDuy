@@ -37,6 +37,7 @@
             this.gunaPanel8 = new Guna.UI.WinForms.GunaPanel();
             this.cbVitri = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
+            this.btLammoi = new Guna.UI2.WinForms.Guna2Button();
             this.btSua = new Guna.UI2.WinForms.Guna2Button();
             this.btThem = new Guna.UI2.WinForms.Guna2Button();
             this.btXoa = new Guna.UI2.WinForms.Guna2Button();
@@ -48,7 +49,10 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaButton22 = new Guna.UI.WinForms.GunaButton();
-            this.btLammoi = new Guna.UI2.WinForms.Guna2Button();
+            this.btMaHoa = new Guna.UI2.WinForms.Guna2Button();
+            this.lbMahoa = new System.Windows.Forms.Label();
+            this.txtMahoa = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTaikhoan)).BeginInit();
             this.gunaPanel8.SuspendLayout();
             this.SuspendLayout();
@@ -95,6 +99,10 @@
             // gunaPanel8
             // 
             this.gunaPanel8.BackColor = System.Drawing.Color.OldLace;
+            this.gunaPanel8.Controls.Add(this.label1);
+            this.gunaPanel8.Controls.Add(this.txtMahoa);
+            this.gunaPanel8.Controls.Add(this.lbMahoa);
+            this.gunaPanel8.Controls.Add(this.btMaHoa);
             this.gunaPanel8.Controls.Add(this.cbVitri);
             this.gunaPanel8.Controls.Add(this.gunaButton3);
             this.gunaPanel8.Controls.Add(this.btLammoi);
@@ -132,7 +140,7 @@
             "1",
             "0"});
             this.cbVitri.ItemsAppearance.Parent = this.cbVitri;
-            this.cbVitri.Location = new System.Drawing.Point(533, 150);
+            this.cbVitri.Location = new System.Drawing.Point(597, 150);
             this.cbVitri.Name = "cbVitri";
             this.cbVitri.ShadowDecoration.Parent = this.cbVitri;
             this.cbVitri.Size = new System.Drawing.Size(68, 36);
@@ -142,16 +150,17 @@
             // 
             this.gunaButton3.AnimationHoverSpeed = 0.07F;
             this.gunaButton3.AnimationSpeed = 0.03F;
-            this.gunaButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.gunaButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.gunaButton3.BorderColor = System.Drawing.Color.Black;
             this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton3.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton3.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
             this.gunaButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton3.ImageSize = new System.Drawing.Size(25, 25);
-            this.gunaButton3.Location = new System.Drawing.Point(991, 6);
+            this.gunaButton3.Location = new System.Drawing.Point(862, 6);
             this.gunaButton3.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -159,20 +168,39 @@
             this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton3.OnHoverImage = null;
             this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton3.Size = new System.Drawing.Size(231, 34);
+            this.gunaButton3.Size = new System.Drawing.Size(360, 34);
             this.gunaButton3.TabIndex = 78;
             this.gunaButton3.Text = "Chức Năng";
             this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btLammoi
+            // 
+            this.btLammoi.BorderRadius = 15;
+            this.btLammoi.CheckedState.Parent = this.btLammoi;
+            this.btLammoi.CustomImages.Parent = this.btLammoi;
+            this.btLammoi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btLammoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLammoi.ForeColor = System.Drawing.Color.White;
+            this.btLammoi.HoverState.Parent = this.btLammoi;
+            this.btLammoi.Location = new System.Drawing.Point(862, 123);
+            this.btLammoi.Margin = new System.Windows.Forms.Padding(2);
+            this.btLammoi.Name = "btLammoi";
+            this.btLammoi.ShadowDecoration.Parent = this.btLammoi;
+            this.btLammoi.Size = new System.Drawing.Size(90, 50);
+            this.btLammoi.TabIndex = 75;
+            this.btLammoi.Text = "Làm mới";
+            this.btLammoi.Click += new System.EventHandler(this.btLammoi_Click);
             // 
             // btSua
             // 
             this.btSua.BorderRadius = 15;
             this.btSua.CheckedState.Parent = this.btSua;
             this.btSua.CustomImages.Parent = this.btSua;
-            this.btSua.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSua.ForeColor = System.Drawing.Color.Black;
+            this.btSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btSua.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSua.ForeColor = System.Drawing.Color.White;
             this.btSua.HoverState.Parent = this.btSua;
-            this.btSua.Location = new System.Drawing.Point(991, 141);
+            this.btSua.Location = new System.Drawing.Point(996, 53);
             this.btSua.Margin = new System.Windows.Forms.Padding(2);
             this.btSua.Name = "btSua";
             this.btSua.ShadowDecoration.Parent = this.btSua;
@@ -186,10 +214,11 @@
             this.btThem.BorderRadius = 15;
             this.btThem.CheckedState.Parent = this.btThem;
             this.btThem.CustomImages.Parent = this.btThem;
-            this.btThem.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.ForeColor = System.Drawing.Color.Black;
+            this.btThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btThem.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.ForeColor = System.Drawing.Color.White;
             this.btThem.HoverState.Parent = this.btThem;
-            this.btThem.Location = new System.Drawing.Point(991, 59);
+            this.btThem.Location = new System.Drawing.Point(862, 53);
             this.btThem.Margin = new System.Windows.Forms.Padding(2);
             this.btThem.Name = "btThem";
             this.btThem.ShadowDecoration.Parent = this.btThem;
@@ -205,10 +234,11 @@
             this.btXoa.BorderRadius = 15;
             this.btXoa.CheckedState.Parent = this.btXoa;
             this.btXoa.CustomImages.Parent = this.btXoa;
-            this.btXoa.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.ForeColor = System.Drawing.Color.Black;
+            this.btXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.ForeColor = System.Drawing.Color.White;
             this.btXoa.HoverState.Parent = this.btXoa;
-            this.btXoa.Location = new System.Drawing.Point(1132, 59);
+            this.btXoa.Location = new System.Drawing.Point(1132, 53);
             this.btXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btXoa.Name = "btXoa";
             this.btXoa.ShadowDecoration.Parent = this.btXoa;
@@ -231,7 +261,7 @@
             this.txtHienthi.ForeColor = System.Drawing.Color.Black;
             this.txtHienthi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHienthi.HoverState.Parent = this.txtHienthi;
-            this.txtHienthi.Location = new System.Drawing.Point(510, 66);
+            this.txtHienthi.Location = new System.Drawing.Point(597, 66);
             this.txtHienthi.Name = "txtHienthi";
             this.txtHienthi.PasswordChar = '\0';
             this.txtHienthi.PlaceholderText = "Nhập tên Hiển thị";
@@ -242,12 +272,13 @@
             // 
             // gunaLabel7
             // 
-            this.gunaLabel7.BackColor = System.Drawing.Color.DodgerBlue;
-            this.gunaLabel7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel7.Location = new System.Drawing.Point(367, 141);
+            this.gunaLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaLabel7.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel7.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel7.Location = new System.Drawing.Point(452, 128);
             this.gunaLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(90, 50);
+            this.gunaLabel7.Size = new System.Drawing.Size(121, 50);
             this.gunaLabel7.TabIndex = 66;
             this.gunaLabel7.Text = "Vị trí";
             this.gunaLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,7 +297,7 @@
             this.txtMatkhau.ForeColor = System.Drawing.Color.Black;
             this.txtMatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMatkhau.HoverState.Parent = this.txtMatkhau;
-            this.txtMatkhau.Location = new System.Drawing.Point(175, 147);
+            this.txtMatkhau.Location = new System.Drawing.Point(189, 147);
             this.txtMatkhau.Name = "txtMatkhau";
             this.txtMatkhau.PasswordChar = '\0';
             this.txtMatkhau.PlaceholderText = "Nhập Mật khẩu";
@@ -290,7 +321,7 @@
             this.txtTaikhoan.ForeColor = System.Drawing.Color.Black;
             this.txtTaikhoan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTaikhoan.HoverState.Parent = this.txtTaikhoan;
-            this.txtTaikhoan.Location = new System.Drawing.Point(175, 66);
+            this.txtTaikhoan.Location = new System.Drawing.Point(189, 59);
             this.txtTaikhoan.Name = "txtTaikhoan";
             this.txtTaikhoan.PasswordChar = '\0';
             this.txtTaikhoan.PlaceholderText = "Nhập Tên tài khoản";
@@ -301,36 +332,39 @@
             // 
             // gunaLabel4
             // 
-            this.gunaLabel4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.gunaLabel4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(28, 141);
+            this.gunaLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaLabel4.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel4.Location = new System.Drawing.Point(40, 136);
             this.gunaLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(90, 50);
+            this.gunaLabel4.Size = new System.Drawing.Size(121, 50);
             this.gunaLabel4.TabIndex = 58;
             this.gunaLabel4.Text = "Mật khẩu";
             this.gunaLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gunaLabel3
             // 
-            this.gunaLabel3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(28, 59);
+            this.gunaLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel3.Location = new System.Drawing.Point(40, 46);
             this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(90, 50);
+            this.gunaLabel3.Size = new System.Drawing.Size(121, 50);
             this.gunaLabel3.TabIndex = 56;
             this.gunaLabel3.Text = "Tài khoản";
             this.gunaLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gunaLabel2
             // 
-            this.gunaLabel2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(367, 66);
+            this.gunaLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel2.Location = new System.Drawing.Point(452, 53);
             this.gunaLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(90, 50);
+            this.gunaLabel2.Size = new System.Drawing.Size(121, 50);
             this.gunaLabel2.TabIndex = 54;
             this.gunaLabel2.Text = "Tên hiển thị";
             this.gunaLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -339,16 +373,17 @@
             // 
             this.gunaButton22.AnimationHoverSpeed = 0.07F;
             this.gunaButton22.AnimationSpeed = 0.03F;
-            this.gunaButton22.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.gunaButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.gunaButton22.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.gunaButton22.BorderColor = System.Drawing.Color.Black;
             this.gunaButton22.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton22.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton22.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton22.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton22.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton22.ForeColor = System.Drawing.Color.White;
             this.gunaButton22.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton22.Image")));
             this.gunaButton22.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton22.ImageSize = new System.Drawing.Size(25, 25);
-            this.gunaButton22.Location = new System.Drawing.Point(218, 6);
+            this.gunaButton22.Location = new System.Drawing.Point(32, 6);
             this.gunaButton22.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton22.Name = "gunaButton22";
             this.gunaButton22.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -356,27 +391,69 @@
             this.gunaButton22.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton22.OnHoverImage = null;
             this.gunaButton22.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton22.Size = new System.Drawing.Size(519, 34);
+            this.gunaButton22.Size = new System.Drawing.Size(705, 34);
             this.gunaButton22.TabIndex = 30;
             this.gunaButton22.Text = "Thông Tin Hàng";
             this.gunaButton22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btLammoi
+            // btMaHoa
             // 
-            this.btLammoi.BorderRadius = 15;
-            this.btLammoi.CheckedState.Parent = this.btLammoi;
-            this.btLammoi.CustomImages.Parent = this.btLammoi;
-            this.btLammoi.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLammoi.ForeColor = System.Drawing.Color.Black;
-            this.btLammoi.HoverState.Parent = this.btLammoi;
-            this.btLammoi.Location = new System.Drawing.Point(1132, 136);
-            this.btLammoi.Margin = new System.Windows.Forms.Padding(2);
-            this.btLammoi.Name = "btLammoi";
-            this.btLammoi.ShadowDecoration.Parent = this.btLammoi;
-            this.btLammoi.Size = new System.Drawing.Size(90, 50);
-            this.btLammoi.TabIndex = 75;
-            this.btLammoi.Text = "Làm mới";
-            this.btLammoi.Click += new System.EventHandler(this.btLammoi_Click);
+            this.btMaHoa.BorderRadius = 15;
+            this.btMaHoa.CheckedState.Parent = this.btMaHoa;
+            this.btMaHoa.CustomImages.Parent = this.btMaHoa;
+            this.btMaHoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btMaHoa.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMaHoa.ForeColor = System.Drawing.Color.White;
+            this.btMaHoa.HoverState.Parent = this.btMaHoa;
+            this.btMaHoa.Location = new System.Drawing.Point(996, 123);
+            this.btMaHoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btMaHoa.Name = "btMaHoa";
+            this.btMaHoa.ShadowDecoration.Parent = this.btMaHoa;
+            this.btMaHoa.Size = new System.Drawing.Size(90, 50);
+            this.btMaHoa.TabIndex = 81;
+            this.btMaHoa.Text = "Mã Hóa MD5";
+            this.btMaHoa.Click += new System.EventHandler(this.btMaHoa_Click);
+            // 
+            // lbMahoa
+            // 
+            this.lbMahoa.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMahoa.Location = new System.Drawing.Point(1103, 185);
+            this.lbMahoa.Name = "lbMahoa";
+            this.lbMahoa.Size = new System.Drawing.Size(137, 26);
+            this.lbMahoa.TabIndex = 82;
+            this.lbMahoa.Text = ".";
+            // 
+            // txtMahoa
+            // 
+            this.txtMahoa.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMahoa.DefaultText = "";
+            this.txtMahoa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMahoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMahoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMahoa.DisabledState.Parent = this.txtMahoa;
+            this.txtMahoa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMahoa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMahoa.FocusedState.Parent = this.txtMahoa;
+            this.txtMahoa.ForeColor = System.Drawing.Color.Black;
+            this.txtMahoa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMahoa.HoverState.Parent = this.txtMahoa;
+            this.txtMahoa.Location = new System.Drawing.Point(1100, 135);
+            this.txtMahoa.Name = "txtMahoa";
+            this.txtMahoa.PasswordChar = '\0';
+            this.txtMahoa.PlaceholderText = "Nhập Mật khẩu cần mã hóa";
+            this.txtMahoa.SelectedText = "";
+            this.txtMahoa.ShadowDecoration.Parent = this.txtMahoa;
+            this.txtMahoa.Size = new System.Drawing.Size(140, 37);
+            this.txtMahoa.TabIndex = 83;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(960, 185);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 26);
+            this.label1.TabIndex = 84;
+            this.label1.Text = "Đoạn Code Mã hóa:";
             // 
             // UserAccount
             // 
@@ -415,5 +492,9 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaButton gunaButton22;
         private Guna.UI2.WinForms.Guna2Button btLammoi;
+        private System.Windows.Forms.Label lbMahoa;
+        private Guna.UI2.WinForms.Guna2Button btMaHoa;
+        private Guna.UI2.WinForms.Guna2TextBox txtMahoa;
+        private System.Windows.Forms.Label label1;
     }
 }

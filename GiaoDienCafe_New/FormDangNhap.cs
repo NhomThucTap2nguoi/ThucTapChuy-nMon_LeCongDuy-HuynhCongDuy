@@ -25,34 +25,44 @@ namespace GiaoDienCafe_New
         {
 
         }
+        int move;
+        int moveX;
+        int moveY;
 
         private void FormDangNhap_MouseDown(object sender, MouseEventArgs e)
         {
-           
 
+            move = 1;
+            moveX = e.X;
+            moveY = e.Y;
         }
 
         private void FormDangNhap_MouseMove(object sender, MouseEventArgs e)
         {
 
+            if (move == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - moveX, MousePosition.Y - moveY);
+            }
         }
 
         private void FormDangNhap_MouseUp(object sender, MouseEventArgs e)
         {
-           
+            move = 0;
         }
 
         private void FormDangNhap_Load(object sender, EventArgs e)
         {
 
         }
-
+        public string userName ="";
+        public string Type;
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             string userName = txtbUserName.Text;
             string passWord = txtbPassWord.Text;
-
-            if (Login(userName, passWord))
+            string Type = cbPhanquyen.Text;
+            if (Login(userName, passWord,Type))
             {
                 MessageBox.Show("Đăng nhập thành công", "Thông báo");
                 FormGiaodien f = new FormGiaodien();
@@ -66,9 +76,9 @@ namespace GiaoDienCafe_New
                 MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
             }
         }
-        bool Login(string username, string password)
+        bool Login(string username, string password ,string type)
         {
-            return AccountDAO.Instance.Login(username, password);
+            return AccountDAO.Instance.Login(username, password , type);
         }
         private void checkboxShow_CheckedChanged(object sender, EventArgs e)
         {

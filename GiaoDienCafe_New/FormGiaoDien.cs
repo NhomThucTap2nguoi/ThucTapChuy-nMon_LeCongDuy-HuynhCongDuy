@@ -20,9 +20,25 @@ namespace GiaoDienCafe_New
             InitializeComponent();
         }
 
+        private string userName;
+        private string Type;
         private void FormGiaodien_Load(object sender, EventArgs e)
         {
             //Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
+           
+           /* var fn = new FormDangNhap();
+            fn.ShowDialog();
+
+            userName = fn.userName;
+            Type = fn.Type;
+
+            if (Type.Equals("1"))
+            {
+                gunaAdvenceButton2.Visible = false;
+                gunaAdvenceButton5.Visible = false;
+            }*/
+           
+            
         }
 
         private void gunaPictureBox2_Click(object sender, EventArgs e)
@@ -48,7 +64,8 @@ namespace GiaoDienCafe_New
 
         private void gunaAdvenceButton10_Click(object sender, EventArgs e)
         {
-            this.Close();
+            MessageBox.Show("Bạn có muốn thoát Chương Trình ?", "Thông báo",MessageBoxButtons.YesNo);
+            Application.Exit();
         }
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
@@ -66,6 +83,36 @@ namespace GiaoDienCafe_New
             FormPaint f = new FormPaint();
             this.Hide();
             f.ShowDialog();
+        }
+
+
+        int move;
+        int moveX;
+        int moveY;
+
+        private void gunaPanel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            move = 1;
+            moveX = e.X;
+            moveY = e.Y;
+        }
+
+        private void gunaPanel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (move == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - moveX,MousePosition.Y -moveY);
+            }
+        }
+
+        private void gunaPanel2_MouseUp(object sender, MouseEventArgs e)
+        {
+            move = 0;
+        }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+            userGioiThieu1.BringToFront();
         }
     }
 }

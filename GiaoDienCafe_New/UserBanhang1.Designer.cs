@@ -88,7 +88,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(355, 26);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 20);
@@ -99,12 +99,12 @@
             // 
             this.btnDiscount.AnimationHoverSpeed = 0.07F;
             this.btnDiscount.AnimationSpeed = 0.03F;
-            this.btnDiscount.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnDiscount.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.btnDiscount.BorderColor = System.Drawing.Color.Black;
             this.btnDiscount.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDiscount.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDiscount.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiscount.ForeColor = System.Drawing.Color.Black;
+            this.btnDiscount.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiscount.ForeColor = System.Drawing.Color.White;
             this.btnDiscount.Image = null;
             this.btnDiscount.ImageSize = new System.Drawing.Size(20, 20);
             this.btnDiscount.Location = new System.Drawing.Point(224, 4);
@@ -114,7 +114,7 @@
             this.btnDiscount.OnHoverForeColor = System.Drawing.Color.White;
             this.btnDiscount.OnHoverImage = null;
             this.btnDiscount.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDiscount.Size = new System.Drawing.Size(92, 30);
+            this.btnDiscount.Size = new System.Drawing.Size(101, 30);
             this.btnDiscount.TabIndex = 1;
             this.btnDiscount.Text = "Giảm giá";
             // 
@@ -122,22 +122,22 @@
             // 
             this.btnSwitchTable.AnimationHoverSpeed = 0.07F;
             this.btnSwitchTable.AnimationSpeed = 0.03F;
-            this.btnSwitchTable.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnSwitchTable.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.btnSwitchTable.BorderColor = System.Drawing.Color.Black;
             this.btnSwitchTable.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSwitchTable.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSwitchTable.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSwitchTable.ForeColor = System.Drawing.Color.Black;
+            this.btnSwitchTable.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSwitchTable.ForeColor = System.Drawing.Color.White;
             this.btnSwitchTable.Image = null;
             this.btnSwitchTable.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSwitchTable.Location = new System.Drawing.Point(83, 5);
+            this.btnSwitchTable.Location = new System.Drawing.Point(61, 6);
             this.btnSwitchTable.Name = "btnSwitchTable";
             this.btnSwitchTable.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnSwitchTable.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnSwitchTable.OnHoverForeColor = System.Drawing.Color.White;
             this.btnSwitchTable.OnHoverImage = null;
             this.btnSwitchTable.OnPressedColor = System.Drawing.Color.Black;
-            this.btnSwitchTable.Size = new System.Drawing.Size(92, 29);
+            this.btnSwitchTable.Size = new System.Drawing.Size(122, 29);
             this.btnSwitchTable.TabIndex = 1;
             this.btnSwitchTable.Text = "Chuyễn bàn";
             this.btnSwitchTable.Click += new System.EventHandler(this.btnSwitchTable_Click);
@@ -152,12 +152,12 @@
             this.txbTotalPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txbTotalPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbTotalPrice.ForeColor = System.Drawing.Color.Red;
-            this.txbTotalPrice.Location = new System.Drawing.Point(445, 26);
+            this.txbTotalPrice.Location = new System.Drawing.Point(445, 16);
             this.txbTotalPrice.Name = "txbTotalPrice";
             this.txbTotalPrice.PasswordChar = '\0';
             this.txbTotalPrice.ReadOnly = true;
             this.txbTotalPrice.SelectedText = "";
-            this.txbTotalPrice.Size = new System.Drawing.Size(129, 32);
+            this.txbTotalPrice.Size = new System.Drawing.Size(129, 42);
             this.txbTotalPrice.TabIndex = 2;
             this.txbTotalPrice.Text = "0";
             this.txbTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -167,12 +167,12 @@
             // 
             this.btnCheckOut.AnimationHoverSpeed = 0.07F;
             this.btnCheckOut.AnimationSpeed = 0.03F;
-            this.btnCheckOut.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnCheckOut.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.btnCheckOut.BorderColor = System.Drawing.Color.Black;
             this.btnCheckOut.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCheckOut.FocusedColor = System.Drawing.Color.Empty;
-            this.btnCheckOut.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckOut.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckOut.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckOut.ForeColor = System.Drawing.Color.White;
             this.btnCheckOut.Image = null;
             this.btnCheckOut.ImageSize = new System.Drawing.Size(20, 20);
             this.btnCheckOut.Location = new System.Drawing.Point(580, 16);
@@ -182,7 +182,7 @@
             this.btnCheckOut.OnHoverForeColor = System.Drawing.Color.White;
             this.btnCheckOut.OnHoverImage = null;
             this.btnCheckOut.OnPressedColor = System.Drawing.Color.Black;
-            this.btnCheckOut.Size = new System.Drawing.Size(92, 42);
+            this.btnCheckOut.Size = new System.Drawing.Size(116, 42);
             this.btnCheckOut.TabIndex = 1;
             this.btnCheckOut.Text = "Thanh Toán";
             this.btnCheckOut.Click += new System.EventHandler(this.btnThanhtoan_Click);
@@ -199,7 +199,7 @@
             this.nmDiscount.Maximum = ((long)(100));
             this.nmDiscount.Minimum = ((long)(0));
             this.nmDiscount.Name = "nmDiscount";
-            this.nmDiscount.Size = new System.Drawing.Size(92, 30);
+            this.nmDiscount.Size = new System.Drawing.Size(101, 30);
             this.nmDiscount.TabIndex = 2;
             this.nmDiscount.Text = "gunaNumeric1";
             this.nmDiscount.Value = ((long)(0));
@@ -207,9 +207,9 @@
             // cbSwitchTable
             // 
             this.cbSwitchTable.FormattingEnabled = true;
-            this.cbSwitchTable.Location = new System.Drawing.Point(83, 40);
+            this.cbSwitchTable.Location = new System.Drawing.Point(61, 41);
             this.cbSwitchTable.Name = "cbSwitchTable";
-            this.cbSwitchTable.Size = new System.Drawing.Size(92, 21);
+            this.cbSwitchTable.Size = new System.Drawing.Size(122, 21);
             this.cbSwitchTable.TabIndex = 0;
             this.cbSwitchTable.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -242,12 +242,12 @@
             // 
             this.btnAddFood.AnimationHoverSpeed = 0.07F;
             this.btnAddFood.AnimationSpeed = 0.03F;
-            this.btnAddFood.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnAddFood.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.btnAddFood.BorderColor = System.Drawing.Color.Black;
             this.btnAddFood.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddFood.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAddFood.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddFood.ForeColor = System.Drawing.Color.Black;
+            this.btnAddFood.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFood.ForeColor = System.Drawing.Color.White;
             this.btnAddFood.Image = null;
             this.btnAddFood.ImageSize = new System.Drawing.Size(20, 20);
             this.btnAddFood.Location = new System.Drawing.Point(454, 12);
@@ -257,7 +257,7 @@
             this.btnAddFood.OnHoverForeColor = System.Drawing.Color.White;
             this.btnAddFood.OnHoverImage = null;
             this.btnAddFood.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAddFood.Size = new System.Drawing.Size(92, 42);
+            this.btnAddFood.Size = new System.Drawing.Size(122, 42);
             this.btnAddFood.TabIndex = 1;
             this.btnAddFood.Text = "Thêm món";
             this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
@@ -323,12 +323,12 @@
             // 
             this.gunaButton22.AnimationHoverSpeed = 0.07F;
             this.gunaButton22.AnimationSpeed = 0.03F;
-            this.gunaButton22.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.gunaButton22.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.gunaButton22.BorderColor = System.Drawing.Color.Black;
             this.gunaButton22.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton22.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton22.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton22.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton22.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton22.ForeColor = System.Drawing.Color.White;
             this.gunaButton22.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton22.Image")));
             this.gunaButton22.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton22.ImageSize = new System.Drawing.Size(25, 25);
