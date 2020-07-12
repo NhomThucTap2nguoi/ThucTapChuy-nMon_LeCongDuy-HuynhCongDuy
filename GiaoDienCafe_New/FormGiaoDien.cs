@@ -84,7 +84,15 @@ namespace GiaoDienCafe_New
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
         {
-            userDouong1.BringToFront();
+            
+            if (quyen == "1")
+            {
+                userDouong1.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Nên nhớ bạn chỉ là nhân viên");
+            }
         }
 
         private void gunaAdvenceButton2_Click(object sender, EventArgs e)
@@ -95,7 +103,7 @@ namespace GiaoDienCafe_New
             }
             else
             {
-                MessageBox.Show("ban khong co quyen");
+                MessageBox.Show("Nên nhớ bạn chỉ là nhân viên");
             }
         }
 
@@ -116,6 +124,13 @@ namespace GiaoDienCafe_New
             move = 1;
             moveX = e.X;
             moveY = e.Y;
+        }
+
+        private void gunaAdvenceButton8_Click(object sender, EventArgs e)
+        {
+            FormDangNhap dn = new FormDangNhap();
+            this.Hide();
+            dn.ShowDialog();
         }
 
         private void gunaPanel2_MouseMove(object sender, MouseEventArgs e)

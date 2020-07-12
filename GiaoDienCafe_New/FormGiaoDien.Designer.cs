@@ -112,6 +112,7 @@
             this.gunaAdvenceButton8.TabIndex = 8;
             this.gunaAdvenceButton8.Text = "ĐĂNG XUẤT";
             this.gunaAdvenceButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton8.Click += new System.EventHandler(this.gunaAdvenceButton8_Click);
             // 
             // gunaAdvenceButton6
             // 

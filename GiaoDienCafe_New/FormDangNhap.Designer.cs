@@ -40,8 +40,6 @@
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
-            this.cbPhanquyen = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -181,34 +179,12 @@
             this.btnExit.Text = "Thoát";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // cbPhanquyen
-            // 
-            this.cbPhanquyen.FormattingEnabled = true;
-            this.cbPhanquyen.Items.AddRange(new object[] {
-            "1",
-            "0"});
-            this.cbPhanquyen.Location = new System.Drawing.Point(192, 322);
-            this.cbPhanquyen.Name = "cbPhanquyen";
-            this.cbPhanquyen.Size = new System.Drawing.Size(133, 21);
-            this.cbPhanquyen.TabIndex = 22;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(101, 322);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 31);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Chọn Vị trí :";
-            // 
             // FormDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(409, 587);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbPhanquyen);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.btnLogin);
@@ -248,7 +224,5 @@
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI2.WinForms.Guna2Button btnExit;
-        private System.Windows.Forms.ComboBox cbPhanquyen;
-        private System.Windows.Forms.Label label2;
     }
 }
