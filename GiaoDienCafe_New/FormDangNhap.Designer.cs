@@ -185,8 +185,8 @@
             // 
             this.cbPhanquyen.FormattingEnabled = true;
             this.cbPhanquyen.Items.AddRange(new object[] {
-            "1: Admin",
-            "0 : Nhân viên"});
+            "1",
+            "0"});
             this.cbPhanquyen.Location = new System.Drawing.Point(192, 322);
             this.cbPhanquyen.Name = "cbPhanquyen";
             this.cbPhanquyen.Size = new System.Drawing.Size(133, 21);

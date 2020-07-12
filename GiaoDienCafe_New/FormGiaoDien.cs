@@ -10,8 +10,12 @@ using System.Windows.Forms;
 
 namespace GiaoDienCafe_New
 {
+   
     public partial class FormGiaodien : Form
     {
+        string tendangnhap = "", tennguoidung = "", matkhau = "", quyen = "";
+        
+
 
 
         public FormGiaodien()
@@ -19,26 +23,36 @@ namespace GiaoDienCafe_New
 
             InitializeComponent();
         }
+        public FormGiaodien(string tendangnhap, string tennguoidung,string matkhau,string quyen)
+        {
+
+            InitializeComponent();
+            this.tendangnhap = tendangnhap;
+            this.tennguoidung = tennguoidung;
+            this.matkhau = matkhau;
+            this.quyen = quyen;
+
+        }
 
         private string userName;
         private string Type;
         private void FormGiaodien_Load(object sender, EventArgs e)
         {
             //Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
-           
-           /* var fn = new FormDangNhap();
-            fn.ShowDialog();
 
-            userName = fn.userName;
-            Type = fn.Type;
+            /*  var fn = new FormDangNhap();
+              fn.ShowDialog();
 
-            if (Type.Equals("1"))
+              userName = fn.userName;
+              Type = fn.Type;
+  */
+           /* if (Type == "1")
             {
                 gunaAdvenceButton2.Visible = false;
                 gunaAdvenceButton5.Visible = false;
-            }*/
-           
-            
+            }
+*/
+
         }
 
         private void gunaPictureBox2_Click(object sender, EventArgs e)
@@ -75,7 +89,14 @@ namespace GiaoDienCafe_New
 
         private void gunaAdvenceButton2_Click(object sender, EventArgs e)
         {
-            userAccount1.BringToFront();
+            if (quyen == "1")
+            {
+                userAccount1.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("ban khong co quyen");
+            }
         }
 
         private void gunaAdvenceButton6_Click(object sender, EventArgs e)

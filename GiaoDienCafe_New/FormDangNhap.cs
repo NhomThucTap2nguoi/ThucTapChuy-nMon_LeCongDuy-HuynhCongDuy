@@ -15,7 +15,7 @@ namespace GiaoDienCafe_New
 {
     public partial class FormDangNhap : Form
     {
-      
+        
         public FormDangNhap()
         {
             InitializeComponent();
@@ -57,24 +57,39 @@ namespace GiaoDienCafe_New
         }
         public string userName ="";
         public string Type;
+
+        
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string userName = txtbUserName.Text;
+            SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-GISFHHL;Initial Catalog=coffee;Integrated Security=True");
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM dbo.Account WHERE UserName = N'" + txtbUserName.Text + "' and PassWord=N'"+txtbPassWord.Text+"'",cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                MessageBox.Show("Đăng nhập thành công", "Thông báo");
+                this.Hide();
+                FormGiaodien f = new FormGiaodien(dt.Rows[0][0].ToString(),dt.Rows[0][1].ToString(),dt.Rows[0][2].ToString(),dt.Rows[0][3].ToString());
+                f.Show();
+            }
+
+            /*string userName = txtbUserName.Text;
             string passWord = txtbPassWord.Text;
             string Type = cbPhanquyen.Text;
-            if (Login(userName, passWord,Type))
+
+            if (Login(userName, passWord, Type))
             {
                 MessageBox.Show("Đăng nhập thành công", "Thông báo");
                 FormGiaodien f = new FormGiaodien();
                 this.Hide();
                 f.ShowDialog();
 
-               
+
             }
             else
             {
                 MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
-            }
+            }*/
         }
         bool Login(string username, string password ,string type)
         {
