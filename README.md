@@ -39,7 +39,7 @@ Thành viên:
 14. Chức năng Chuyển Bàn. (Hoàn thành)
 15. Chức năng Giảm giá trong một hóa đơn. (Hoàn thành)
 16. Code chức năng  Paint vẽ hìAnh Icon Cafe. (Hoàn thành)
-17. Đóng gói phần mềm.(Lỗi Thư viện Guna Framework) 
+17. Đóng gói phần mềm.(Hoàn thành) 
 18. Phân quyền Tài khoản(Admin và Nhân viên) (Hoàn thành)
 19. Tìm kiếm thông tin Khách hACàng theo SĐT (Không hoàn thành)
 
