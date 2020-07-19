@@ -1,9 +1,10 @@
 # THỰC TẬP CHUYÊN MÔN NĂM HỌC 2019-2020
-Nhóm Đôi: Thành viên:
-
-• HUỲNH CÔNG DUY MSV:5851071013
-
-• LÊ CÔNG DUY    MSV: 5851071012
+Nhóm Đôi:
+1. HUỲNH CÔNG DUY   
+MSV: 5851071013
+2. LÊ CÔNG DUY          
+MSV: 5851071012     
+* Lớp: Công nghệ thông tin-K58
 
 ## Đề tài: QUẢN LÍ QUÁN CAFE – Window Form C#
 Giảng viên: Thầy Nguyễn Lê Minh. 
